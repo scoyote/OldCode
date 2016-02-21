@@ -1,0 +1,52 @@
+#!/usr/bin/perl
+#####################################################################################
+#####  sasmon       
+#####  author:  Samuel T. Croker
+#####  Created: 7/02/09
+#####  Purpose: This stub is a quickly worked up routine to monitor a specific file
+#####           system for capacity.  It is based on the df command and looks  
+#####           specifically at the %Used column to determine what the current 
+#####		statuss is.  So this program, along with it's sisters should be
+#####		converted to subroutines but it was literally cooked up in 
+#####		about an hour with no further time to work on it.  Boundary values
+#####		were tested but that is about it.
+#####		The initial threshold is where the messages begin.  So if it is 70,
+#####		then the messages will start when the %Used column is 70%.  Then it
+#####		will be quiet until 1) the %used goes up another increment (see below)
+#####		or the %used drops back below the original threshold.
+#####  ARGS:    Command line arguments:
+#####		ARGV[0] - Integerr threshold limit in percent*100 (ie 70% = 70)
+#####		ARGV[1] - Integer increment to subsequent messages in percent.  The more
+#####			granular this value the more emails that will be sent.  It
+#####			could get pretty chatty at 1 but might be useful.  Maybe 5?
+#####		ARGV[2] - Integer seconds between scans - 5 is good.
+#####		ARGV[3] - Path to mount to be checked.  You must escape all /'s 
+#####			with \ so /sas/saswork would be \/sas\/saswork. 
+#####		ARGV[4] - Single email address.  You must escape all @'s
+#####			like a\@b.com 
+#####  I/O:	OUT: /sas/adminscripts/workreport.txt
+#####		     /sas/adminscripts/totreport.txt
+#####		     email sent to the email recipient in emailaddr variable
+#####		IN:  /sas/adminscripts/SpaceMessage.txt
+#####		     /sas/adminscripts/SpaceMessageRestored.txt
+#####  Exec:	sasmon 70 5 5 \/sas\/saswork a@b.com > /sas/adminscripts/sasworkmon.log
+#####
+#####################################################################################
+
+use List::Util qw[min max];
+
+
+my $arr;
+my $arr2;
+
+$alertval[0]=$alrtlim;
+     my $date = qx/date '+%m-%d-%Y:%H-%M'/;
+     chomp $date;
+
+     my @out = qx/ls -l \/sas\/saswork/;
+     foreach my $line(@out){
+	my @arr = split(' ',$line);
+	my @out1=qx/du -s \/sas\/saswork\/$arr[8]/;
+	my @arr2= split(' ',@out1);	
+print "$arr[2] $arr[8] $arr2[0] $arr2[1]\n";
+	}
