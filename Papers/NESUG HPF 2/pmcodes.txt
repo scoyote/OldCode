@@ -1,0 +1,522 @@
+
+# 
+#
+# USGS Parameter Code Definitions File
+#
+# Column Definitions
+#  parameter_cd  - Parameter Code
+#  parameter_group_nm  - Group Name
+#  parameter_nm  - Parameter Name/Description
+#
+#
+# Date Retrieved: 2007-11-11 10:27:51 EST
+#
+parameter_cd	parameter_group_nm	parameter_nm
+5s	30s	170s
+00003	Physical Property	Sampling depth, feet
+00004	Physical Property	Stream width, feet
+00010	Physical Property	Temperature, water, degrees Celsius
+00011	Physical Property	Temperature, water, degrees Fahrenheit
+00012	Physical Property	Evaporation temperature, 48 inch pan, degrees Celsius
+00013	Physical Property	Evaporation temperature, 24 inch pan, degrees Celsius
+00014	Physical Property	Wet bulb temperature, degrees Celsius
+00020	Physical Property	Temperature, air, degrees Celsius
+00021	Physical Property	Temperature, air, degrees Fahrenheit
+00024	Physical Property	Sample length, inches
+00025	Physical Property	Barometric pressure, millimeters of mercury
+00030	Physical Property	Incident solar radiation intensity, calories per square centimeter per day
+00031	Physical Property	Incident light remaining at depth, percent
+00032	Physical Property	Cloud cover, percent
+00034	Physical Property	Depth to 1 percent of surface light, feet
+00035	Physical Property	Wind speed, miles per hour
+00036	Physical Property	Wind direction, degrees clockwise from true north
+00042	Physical Property	Altitude, feet above mean sea level
+00045	Physical Property	Precipitation, total, inches
+00046	Physical Property	Precipitation, total, inches per week
+00047	Physical Property	Total partial pressure of dissolved gases, water, unfiltered, millimeters of mercury
+00048	Physical Property	Total partial pressure of dissolved gases, water, unfiltered, percent of saturation
+00049	Physical Property	Surface area, square miles
+00050	Physical Property	Evaporation total, inches per day
+00051	Physical Property	Surface area, square feet
+00052	Physical Property	Relative humidity, percent
+00053	Physical Property	Surface area, acres
+00054	Physical Property	Reservoir storage, acre feet
+00055	Physical Property	Stream velocity, feet per second
+00056	Physical Property	Flow rate of well, gallons per day
+00058	Physical Property	Flow rate of well, gallons per minute
+00059	Physical Property	Flow rate, instantaneous, gallons per minute
+00060	Physical Property	Discharge, cubic feet per second
+00061	Physical Property	Discharge, instantaneous, cubic feet per second
+00062	Physical Property	Elevation of reservoir water surface above datum, feet
+00064	Physical Property	Mean depth of stream, feet
+00065	Physical Property	Gage height, feet
+00067	Physical Property	Tide stage, code
+00070	Physical Property	Turbidity, water, unfiltered, Jackson Turbidity Units
+00072	Physical Property	Stream stage, meters
+00074	Physical Property	Light transmission, 1 meter pathlength, water, unfiltered, percent
+00075	Physical Property	Turbidity, water, unfiltered, Hellige turbidimeter, milligrams per liter as silicon dioxide
+00076	Physical Property	Turbidity, water, unfiltered, nephelometric turbidity units
+00077	Physical Property	Transparency, water, in situ, Secchi disc, inches
+00078	Physical Property	Transparency, water, in situ, Secchi disc, meters
+00080	Physical Property	Color, water, filtered, platinum cobalt units
+00081	Physical Property	Apparent color, water, unfiltered, platinum-cobalt units
+00085	Physical Property	Odor at room temperature, threshold odor number
+00086	Physical Property	Odor at 60 degrees Celsius, threshold odor number
+00090	Physical Property	Oxidation reduction potential, reference electrode not specified, millivolts
+00094	Physical Property	Specific conductance, water, unfiltered, field, microsiemens per centimeter at 25 degrees Celsius
+00095	Physical Property	Specific conductance, water, unfiltered, microsiemens per centimeter at 25 degrees Celsius
+00096	Physical Property	Salinity, water, unfiltered, milligrams per milliliter at 25 degrees Celsius
+00098	Physical Property	Sampling depth, meters
+00100	Physical Property	Time of travel, hours
+00117	Physical Property	Precipitation, duration of storm event, minutes
+00118	Physical Property	Precipitation, cumulative at given time, location 6, inches
+00119	Physical Property	Precipitation, cumulative at given time, location 5, inches
+00120	Physical Property	Precipitation, cumulative at given time, location 4, inches
+00121	Physical Property	Precipitation, cumulative at given time, location 3, inches
+00122	Physical Property	Precipitation, cumulative at given time, location 2, inches
+00123	Physical Property	Precipitation, cumulative at given time, location 1, inches
+00124	Physical Property	Precipitation, intensity at given time, location 6, inches per hour
+00125	Physical Property	Precipitation, intensity at given time, location 5, inches per hour
+00126	Physical Property	Precipitation, intensity at given time, location 4, inches per hour
+00127	Physical Property	Precipitation, intensity at given time, location 3, inches per hour
+00128	Physical Property	Precipitation, intensity at given time, location 2, inches per hour
+00129	Physical Property	Precipitation, intensity at given time, location 1, inches per hour
+00135	Physical Property	Elapsed time of storm, hours
+00164	Physical Property	Flow, gallons per batch
+00193	Physical Property	Precipitation total for defined period, inches
+00196	Physical Property	Wind run, miles
+00197	Physical Property	Evaporation, accumulated, inches
+00198	Physical Property	Depth to 10 percent of surface light, feet
+00199	Physical Property	Depth to 50 percent of surface light, feet
+00200	Physical Property	Incident light intensity, 400-700 nanometers, microeinsteins per square meter per second
+00201	Physical Property	Incident light, daily total, 400-700 nanometers, microeinsteins per square meter
+00294	Physical Property	Chemical oxygen demand, soluble, dry atmospheric deposition, milligrams per kilogram
+00296	Physical Property	Chemical oxygen demand, insoluble, dry atmospheric deposition, milligrams per kilogram
+00297	Physical Property	Chemical oxygen demand, total, dry atmospheric deposition, milligrams per kilogram
+00300	Physical Property	Dissolved oxygen, water, unfiltered, milligrams per liter
+00301	Physical Property	Dissolved oxygen, water, unfiltered, percent of saturation
+00302	Physical Property	Immediate oxygen demand, water, unfiltered, 20 degrees Celsius, milligrams per liter
+00310	Physical Property	Biochemical oxygen demand, water, unfiltered, 5 days at 20 degrees Celsius, milligrams per liter
+00315	Physical Property	Biochemical oxygen demand, water, unfiltered, 7 days at 20 degrees Celsius, milligrams per liter
+00319	Physical Property	Ultimate biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, milligrams per liter
+00320	Physical Property	Ultimate carbonaceous biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, milligrams per liter
+00321	Physical Property	Ultimate nitrogenous biochemical oxygen demand, water, unfiltered, milligrams per liter
+00324	Physical Property	Biochemical oxygen demand, water, unfiltered, 20 days at 20 degrees Celsius, milligrams per liter
+00325	Physical Property	Deoxygenation constant (k1 to base e), biochemical oxygen demand, 20 degrees Celsius, water, unfiltered, per day
+00330	Physical Property	Reoxygenation constant (k2 to base e), water, unfiltered, per day
+00335	Physical Property	Chemical oxygen demand, low level, water, unfiltered, milligrams per liter
+00339	Physical Property	Chemical oxygen demand, bed sediment, total, dry weight, milligrams per kilogram
+00340	Physical Property	Chemical oxygen demand, high level, water, unfiltered, milligrams per liter
+00349	Physical Property	Biochemical oxygen demand, water, unfiltered, 30 days at 20 degrees Celsius, milligrams per liter
+00400	Physical Property	pH, water, unfiltered, field, standard units
+00402	Physical Property	Specific conductance, non-temperature corrected, water, unfiltered, microsiemens per centimeter
+00403	Physical Property	pH, water, unfiltered, laboratory, standard units
+00405	Physical Property	Carbon dioxide, water, unfiltered, milligrams per liter
+00480	Physical Property	Salinity, water, unfiltered, parts per thousand
+00495	Physical Property	Moisture content, fraction of dry weight, percent
+00496	Physical Property	Loss on ignition, bed sediment, dry weight, milligrams per kilogram
+00500	Physical Property	Residue on evaporation, dried at 105 degrees Celsius, water, unfiltered, milligrams per liter
+00505	Physical Property	Loss on ignition, from residue on evaporation, water, unfiltered, milligrams per liter
+00510	Physical Property	Residue on evaporation, water, unfiltered, milligrams per liter
+00515	Physical Property	Residue on evaporation, dried at 105 degrees Celsius, water, filtered, milligrams per liter
+00520	Physical Property	Loss on ignition, from residue on evaporation, water, filtered, milligrams per liter
+00525	Physical Property	Residue on evaporation, water, filtered, milligrams per liter
+00530	Physical Property	Residue, total nonfilterable, milligrams per liter
+00535	Physical Property	Loss on ignition, from nonfilterable residue, milligrams per liter
+00540	Physical Property	Residue, fixed nonfilterable, milligrams per liter
+00545	Physical Property	Solids, settleable, water, unfiltered, milligrams per liter
+00548	Physical Property	Residue, fixed nonsettleable, milligrams per liter
+00549	Physical Property	Loss on ignition, from nonsettleable residue on evaporation, milligrams per liter
+00898	Physical Property	Carbonate hardness, water, filtered, milligrams per liter as calcium carbonate
+00900	Physical Property	Hardness, water, milligrams per liter as calcium carbonate
+00901	Physical Property	Carbonate hardness, water, unfiltered, milligrams per liter as calcium carbonate
+00902	Physical Property	Noncarbonate hardness, water, unfiltered, field, milligrams per liter as calcium carbonate
+00903	Physical Property	Noncarbonate hardness, water, unfiltered, lab, milligrams per liter as calcium carbonate
+00904	Physical Property	Noncarbonate hardness, water, filtered, field, milligrams per liter as calcium carbonate
+00905	Physical Property	Noncarbonate hardness, water, filtered, lab, milligrams per liter as calcium carbonate
+00906	Physical Property	Hardness, water, filtered, calculated, milligrams per liter as calcium carbonate
+00907	Physical Property	Hardness, water, unfiltered, calculated, milligrams per liter as calcium carbonate
+00908	Physical Property	Hardness, water, filtered, measured, milligrams per liter as calcium carbonate
+00909	Physical Property	Hardness, water, unfiltered, measured, milligrams per liter as calcium carbonate
+01300	Physical Property	Oil and grease, severity, code
+01305	Physical Property	Detergent suds, severity, code
+01310	Physical Property	Gas bubbles, severity, code
+01315	Physical Property	Floating sludge, severity, code
+01320	Physical Property	Floating garbage, severity, code
+01330	Physical Property	Odor, atmospheric, severity, code
+01335	Physical Property	Sewage solids, fresh floating, severity, code
+01340	Physical Property	Dead fish, severity, code
+01345	Physical Property	Floating debris, severity, code
+01350	Physical Property	Turbidity, severity, code
+01355	Physical Property	Ice cover, floating or solid, severity, code
+01371	Physical Property	Average length of biological tissue samples in composite, centimeters
+01373	Physical Property	Average weight of biological tissue samples in composite, grams
+04121	Physical Property	Horizontal width of vertical, feet
+30205	Physical Property	Temperature, wood (fire potential), degrees Fahrenheit
+30206	Physical Property	Temperature, wood (fire potential), degrees Celsius
+30207	Physical Property	Gage height, above datum, meters
+30208	Physical Property	Discharge, cubic meters per second
+30209	Physical Property	Discharge, instantaneous, cubic meters per second
+30210	Physical Property	Depth to water level, below land surface datum (LSD), meters
+30211	Physical Property	Elevation above NGVD 1929, meters
+30212	Physical Property	Stage, sonic range determination, feet
+30213	Physical Property	Stage, sonic range determination, meters
+30214	Physical Property	Pressure, relative, manometer tank, count
+30267	Physical Property	Illumination, lumens per square foot
+30334	Physical Property	Surface area, suspended sediment, square meters per gram
+45001	Physical Property	Precipitation, number of days since 0.25 to 0.5 inch precipitation event
+45002	Physical Property	Precipitation, number of days since 0.5 to 1.0 inch precipitation event
+45003	Physical Property	Precipitation, number of days since greater than 1.0 inch precipitation event
+45587	Physical Property	Temperature, internal, within data collection platform, degrees Celsius
+45588	Physical Property	Temperature, internal, within data collection platform, degrees Fahrenheit
+45589	Physical Property	Temperature, internal, within equipment shelter, degrees Celsius
+45590	Physical Property	Temperature, internal, within equipment shelter, degrees Fahrenheit
+46227	Physical Property	Organic matter, soil, percent
+46253	Physical Property	pH, 1 to 1 soil/water mixture, standard units
+46311	Physical Property	Moisture content, soil, dry weight, percent
+46514	Physical Property	Solar radiation, upward intensity, calories per square centimeter per minute
+46515	Physical Property	Solar radiation, downward intensity, calories per square centimeter per minute
+46516	Physical Property	Solar radiation, net, calories per square centimeter per minute
+46529	Physical Property	Precipitation, inches
+49273	Physical Property	Water present, biota, tissue, recoverable, dry weight, percent
+49281	Physical Property	Location in cross section, distance from left bank looking downstream, percent
+49282	Physical Property	Moisture content, bed sediment smaller than 2 millimeters, wet sieved (native water), field, recoverable, dry weight, percent
+49701	Physical Property	Transparency, water, in situ, Secchi disc, feet
+49956	Physical Property	Distance, observation point to sample location, feet
+49957	Physical Property	Distance, horizontal, observation point to sampling location, feet
+49982	Physical Property	Bulk density, soil, dry, grams per cubic centimeter
+49983	Physical Property	Mineral density, soil, grams per cubic centimeter
+49984	Physical Property	Rubbed fiber content, soil, percent
+49985	Physical Property	Marsh level movement, vertical, meters
+50011	Physical Property	Temperature, vent gas, volcanic, degrees Celsius
+50012	Physical Property	Compaction, aquifer system, feet
+50013	Physical Property	Compaction, soil, feet
+50042	Physical Property	Discharge, gallons per minute
+50047	Physical Property	Flow, maximum during 24 hour period, million gallons per day
+50048	Physical Property	Flow, minimum during 24 hour period, million gallons per day
+50050	Physical Property	Flow, in conduit or through a treatment plant, million gallons per day
+50051	Physical Property	Flow rate, instantaneous, million gallons per day
+50052	Physical Property	Flow total during composite period, thousands of gallons
+50054	Physical Property	Storm water overflow volume, millions of gallons
+50055	Physical Property	Depth of flow in pipe or conduit, inches
+50086	Physical Property	Solids, settleable, water, unfiltered, milliliters per liter per hour
+50293	Physical Property	Velocity samplings, good, average stored, acoustic velocity meter, percent
+50414	Physical Property	Distance, observation point to stream bottom, meters
+50415	Physical Property	Distance, observation point to stream bottom, feet
+50416	Physical Property	Distance, observation point to sampling location, meters
+50417	Physical Property	Distance, observation point to sampling location, feet
+50624	Physical Property	Absorbance, UV, 254 nm, 1 cm pathlength, water, filtered, units per centimeter
+61028	Physical Property	Turbidity, water, unfiltered, field, nephelometric turbidity units
+61032	Physical Property	Carbonaceous biochemical oxygen demand, water, filtered, nitrogen inhibited, 20 days at 20 degrees Celsius, milligrams per liter
+61055	Physical Property	Water level, depth below measuring point, feet
+61168	Physical Property	Carbonaceous biochemical oxygen demand, water, unfiltered, nitrogen inhibited, 20 days at 20 degrees Celsius, milligrams per liter
+61726	Physical Property	Absorbance, UV, organic constituents, 280 nm, 1 cm pathlength, water, filtered, units per centimeter
+61727	Physical Property	Wind gust speed, air, knots
+61728	Physical Property	Wind gust speed, air, miles per hour
+61729	Physical Property	Wind gust direction, air, degrees clockwise from true north
+62600	Physical Property	Water level elevation above NGVD 1929, corrected for barometric pressure, feet
+62601	Physical Property	Water level elevation above NGVD 1929, inclined (non-vertical) well, feet
+62602	Physical Property	Barometric pressure, corrected to sea level, inches of mercury
+62603	Physical Property	Barometric pressure, uncorrected, inches of mercury
+62604	Physical Property	Barometric pressure, corrected to sea level, inches of water
+62605	Physical Property	Barometric pressure, uncorrected, inches of water
+62606	Physical Property	Barometric pressure, corrected to sea level, kilopascals
+62607	Physical Property	Barometric pressure, uncorrected, kilopascals
+62608	Physical Property	Total solar radiation (direct + diffuse radiation on a horizontal surface), watts per square meter
+62609	Physical Property	Net solar radiation, watts per square meter
+62610	Physical Property	Ground-water level above NGVD 1929, feet
+62611	Physical Property	Ground-water level above NAVD 1988, feet
+62612	Physical Property	Ground-water level above NGVD 1929, meters
+62613	Physical Property	Ground-water level above NAVD 1988, meters
+62614	Physical Property	Lake or reservoir water surface elevation above NGVD 1929, feet
+62615	Physical Property	Lake or reservoir water surface elevation above NAVD 1988, feet
+62616	Physical Property	Lake or reservoir water surface elevation above NGVD 1929, meters
+62617	Physical Property	Lake or reservoir water surface elevation above NAVD 1988, meters
+62618	Physical Property	Lake or reservoir stage, above datum, meters
+62619	Physical Property	Tide elevation above NGVD 1929, feet
+62620	Physical Property	Tide elevation above NAVD 1988, feet
+62621	Physical Property	Tide elevation above NGVD 1929, meters
+62622	Physical Property	Tide elevation above NAVD 1988, meters
+62623	Physical Property	Tide stage, above datum, feet
+62624	Physical Property	Tide stage, above datum, meters
+62625	Physical Property	Wind speed, meters per second
+62846	Physical Property	Soil temperature, degrees Fahrenheit
+62856	Physical Property	Discharge, peak for storm event, cubic feet per second
+62966	Physical Property	Temperature, plant surface, degrees Celsius
+62967	Physical Property	Soil-heat flux, watts per square meter
+62968	Physical Property	Latent-heat flux, watts per square meter
+62969	Physical Property	Sensible-heat flux, watts per square meter
+62970	Physical Property	Water vapor pressure, megapascals
+62971	Physical Property	Dissolved oxygen, water, unfiltered, lab, milligrams per liter
+63001	Physical Property	Oxidation reduction potential, raw emf, reference electrode not specified, millivolts
+63002	Physical Property	Oxidation reduction potential, relative to the standard hydrogen electrode (SHE), millivolts
+63158	Physical Property	Stream water level elevation above NGVD 1929, in feet
+63159	Physical Property	Stream water level elevation above NGVD 1929, in meters
+63160	Physical Property	Stream water level elevation above NAVD 1988, in feet
+63161	Physical Property	Stream water level elevation above NAVD 1988, in meters
+63162	Physical Property	Specific UV Absorbance, 254nm, water, filtered, 1 cm pathlength, calculated, liter per (milligram of dissolved organic carbon * meter)
+63675	Physical Property	Turbidity, water, unfiltered, broad band light source (400-680 nm), detection angle 90 +/- 30 degrees to incident light, nephelometric turbidity units (NTU)
+63676	Physical Property	Turbidity, water, unfiltered, broad band light source (400-680 nm), detectors at multiple angles including 90 +/- 30 degrees, ratiometric correction, nephelometric turbid
+63677	Physical Property	Backscatter turbidity, water, unfiltered, broad band light source (400-680 nm), detection angle 0 degrees to incident light, backscatter units (BU)
+63678	Physical Property	Attenuation turbidity, water, unfiltered, broad band light source (400-680 nm), detection angle 180 degrees to incident light, attenuation units (AU)
+63679	Physical Property	Turbidity, water, unfiltered, broad band light source (400-680 nm), multiple beam, detectors at multiple angles including 90 degrees, nephelometric turbidity multibeam un
+63680	Physical Property	Turbidity, water, unfiltered, monochrome near infra-red LED light, 780-900 nm, detection angle 90 +/ -2.5 degrees, formazin nephelometric units (FNU)
+63681	Physical Property	Turbidity, water, unfiltered, monochrome near infra-red LED light, 780-900 nm, detectors at multiple angles including 90 +/- 2.5 degrees, ratiometric correction, formazin
+63682	Physical Property	Turbidity, water, unfiltered, monochrome near infra-red LED light source, 780-900 nm, detection angle 0 degrees to incident light (backscatter), formazin backscatter unit
+63683	Physical Property	Turbidity, water, unfiltered, monochrome near infra-red LED light source, 780-900 nm, detection angle 180 degrees to incident light (attenuation), formazin attenuation un
+63684	Physical Property	Turbidity, water, unfiltered, monochrome near infra-red LED light source, 780-900 nm, multiple beam, detectors at multiple angles including 90 degrees, formazin nephelome
+63740	Physical Property	Loss on ignition, solids, percent
+63742	Physical Property	Specific UV absorbance at 254nm of hydrophobic acid fraction of DOC, water, filtered, 100 times the absorbance per centimeter per milligram per liter of hydrophobic acid
+63743	Physical Property	Specific UV absorbance at 254nm of hydrophilic acid fraction of DOC, water, filtered, 100 times the absorbance per centimeter per milligram per liter of hydrophilic acid
+63744	Physical Property	Specific UV absorbance at 254nm of transphilic organic acid fraction of DOC, water, filtered, 100 times the absorbance per centimeter per mg/L of transphilic acid
+64094	Physical Property	Fluorescence at 650-700 nm as a fraction of incident light at 470 nm, measured in situ, percent
+65225	Physical Property	Transparency, water, unfiltered, transparency tube, centimeters
+65237	Physical Property	Oxygen-consumption rate, bed sediment, milligrams of oxygen per gram of sediment (dry weight) per hour
+70218	Physical Property	Time interval between storm and sample collection, hours
+70299	Physical Property	Suspended solids, dried at 110 degrees Celsius, water, milligrams per liter
+70300	Physical Property	Residue on evaporation, dried at 180 degrees Celsius, water, filtered, milligrams per liter
+70301	Physical Property	Residue, water, filtered, sum of constituents, milligrams per liter
+70302	Physical Property	Residue, water, dissolved, tons per day
+70303	Physical Property	Residue, water, filtered, tons per acre-foot
+70310	Physical Property	pH, bed sediment, standard units
+70348	Physical Property	Solids, settleable, water, unfiltered, milliliters per liter
+70349	Physical Property	Residue, non-settleable, water, unfiltered, milliliters per liter
+70516	Physical Property	Color, absorbance at 400 nm, water, filtered, absorbance units per centimeter
+70971	Physical Property	Light attenuation coefficient, alphas per meter
+71820	Physical Property	Density, water, unfiltered, grams per milliliter at 20 degrees Celsius
+71835	Physical Property	Oxygen consumed, water, filtered, milligrams per liter
+71840	Physical Property	Oxygen consumed, water, unfiltered, milligrams per liter
+71860	Physical Property	Sodium carbonate, residual, water, unfiltered, milligrams per liter as calcium carbonate
+72000	Physical Property	Altitude of land surface, feet
+72001	Physical Property	Depth of hole, feet below land surface datum
+72002	Physical Property	Depth to top of water-bearing zone, feet
+72003	Physical Property	Depth to bottom of water-bearing zone, feet
+72008	Physical Property	Depth of well, feet below land surface datum
+72010	Physical Property	Fluid resistivity, ohm-meter(s)
+72012	Physical Property	Temperature, specific gravity measurement, degrees Celsius
+72013	Physical Property	Specific gravity
+72014	Physical Property	Temperature, resistivity measurement, degrees Celsius
+72015	Physical Property	Depth to top of sample interval, feet below land surface datum
+72016	Physical Property	Depth to bottom of sample interval, feet below land surface datum
+72019	Physical Property	Depth to water level, feet below land surface
+72020	Physical Property	Elevation above NGVD 1929, feet
+72021	Physical Property	Reservoir storage, cubic feet per second-days
+72022	Physical Property	Reservoir storage, million gallons
+72023	Physical Property	Reservoir storage, million cubic feet
+72024	Physical Property	Pond storage, gallons
+72025	Physical Property	Depth of reservoir, feet
+72029	Physical Property	Distance from outlet or southernmost point, feet
+72036	Physical Property	Reservoir storage, thousand acre feet
+72040	Physical Property	Drawdown observed, feet
+72103	Physical Property	Sample location, relative to right bank, looking downstream, feet
+72104	Physical Property	Sample location, distance downstream, feet
+72105	Physical Property	Sample location, distance upstream, feet
+72106	Physical Property	Elevation of sample, feet
+72118	Physical Property	Reservoir storage, live pool, acre feet
+72119	Physical Property	Reservoir storage, active pool, acre feet
+72120	Physical Property	Reservoir storage, total pool, percent of capacity
+72121	Physical Property	Reservoir storage, live pool, percent of capacity
+72122	Physical Property	Discharge, median for storm event, cubic feet per second
+72123	Physical Property	Discharge, mean for storm event, cubic feet per second
+72124	Physical Property	Net radiation (net solar + net long wave radiation), watts per square meter
+72125	Physical Property	Atmospheric water vapor pressure, calculated, kilopascals
+72126	Physical Property	Standard deviation of wind direction, degrees
+72127	Physical Property	Atmospheric saturated water vapor pressure, calculated, kilopascals
+72128	Physical Property	Potential latent heat flux, calculated by Penman method, watts per square meter
+72129	Physical Property	Potential evapotranspiration (PET), calculated by Priestley-Taylor method, millimeters per hour
+72130	Physical Property	Potential evapotranspiration (PET), calculated by Penman method, millimeters per hour
+72131	Physical Property	Precipitation, millimeters per hour
+72132	Physical Property	Soil heat flux at soil surface, calculated, watts per square meter
+72133	Physical Property	Soil water matric potential, negative bars
+72134	Physical Property	Change in heat flux density between 8 centimeter soil depth and the surface, calculated, watts per square meter
+72135	Physical Property	Evapotranspiration total, inches per day
+72136	Physical Property	Hydrostatic head difference, ground water minus surface water, millimeters
+72137	Physical Property	Discharge, tidally filtered, cubic feet per second
+72138	Physical Property	Discharge, tidally filtered, cubic meters per second
+72139	Physical Property	Discharge, tidally filtered, gallons per minute
+72140	Physical Property	Length of organism, maximum in composite sample, centimeters
+72141	Physical Property	Length of organisms, standard deviation, composite sample, centimeters
+72142	Physical Property	Weight of organism, minimum in composite sample, grams
+72143	Physical Property	Weight of organism, maximum in composite sample, grams
+72144	Physical Property	Weight of organisms, standard deviation, composite sample, grams
+72146	Physical Property	Length of organism, minimum in composite sample, centimeters
+72149	Physical Property	Stream velocity, meters per second
+72150	Physical Property	Ground-water level relative to Mean Sea Level (MSL), feet
+72151	Physical Property	Water column pressure, pounds per square inch
+74082	Physical Property	Streamflow, daily, acre-feet
+74207	Physical Property	Moisture content, soil, volumetric, percent of total volume
+75969	Physical Property	Barometric pressure, not corrected to sea level, millibars
+78890	Physical Property	Sampling depth, feet below mean sea level
+78891	Physical Property	Sampling depth, meters below mean sea level
+80082	Physical Property	Carbonaceous biochemical oxygen demand, water, unfiltered, 5 days at 20 degrees Celsius, milligrams per liter
+80083	Physical Property	Carbonaceous biochemical oxygen demand, water, unfiltered, 7 days at 20 degrees Celsius, milligrams per liter
+80087	Physical Property	Carbonaceous biochemical oxygen demand, water, unfiltered, 20 days at 20 degrees Celsius, milligrams per liter
+80110	Physical Property	Specific gravity at 4 degrees Celsius, water, unfiltered, ratio
+81024	Physical Property	Drainage area, square miles
+81025	Physical Property	Contributing drainage area, square miles
+81026	Physical Property	Water content of snow, inches
+81027	Physical Property	Temperature, soil, degrees Celsius
+81029	Physical Property	Temperature, snow, degrees Celsius
+81356	Physical Property	Cation exchange capacity, milliequivalents per 100 grams
+81380	Physical Property	Discharge velocity, meters per second
+81381	Physical Property	Discharge duration, minutes
+81395	Physical Property	Storm water flow, million gallons per day
+81798	Physical Property	Precipitation event, inches per composite
+81903	Physical Property	Depth to bottom at sample location, feet
+81904	Physical Property	Velocity at point in stream, feet per second
+81908	Physical Property	Recovery fraction ratio
+81909	Physical Property	Sample midpoint, feet
+81912	Physical Property	Open pressure, pounds per square inch
+81913	Physical Property	Shut in pressure, pounds per square inch
+81914	Physical Property	Initial flowing pressure, pounds per square inch
+81915	Physical Property	Final flowing pressure, pounds per square inch
+81916	Physical Property	Pressure at bottom of hole, pounds per square inch
+81917	Physical Property	Temperature at bottom of hole, degrees Fahrenheit
+82015	Physical Property	Mean depth of lake, feet
+82016	Physical Property	Maximum depth of lake, feet
+82030	Physical Property	Coal, suspended sediment, dry weight, grams per kilogram
+82047	Physical Property	Depth to top of sampling interval, meters
+82048	Physical Property	Depth to bottom of sampling interval, meters
+82049	Physical Property	Deoxygenation constant (k1 to base 10), carbonaceous biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, per day
+82050	Physical Property	Reoxygenation constant (k2 to base 10), carbonaceous biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, per day
+82079	Physical Property	Turbidity, water, unfiltered, laboratory, nephelometric turbidity units
+82127	Physical Property	Wind speed, knots
+82130	Physical Property	Ice thickness, feet
+82131	Physical Property	Ice thickness, meters
+82132	Physical Property	Deoxygenation constant (k1 to base e), nitrogenous biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, per day
+82133	Physical Property	Deoxygenation constant (k1 to base e), carbonaceous biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, per day
+82134	Physical Property	Deoxygenation constant (k1 to base 10), nitrogenous biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, per day
+82135	Physical Property	Reaction lag time, carbonaceous biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, days
+82136	Physical Property	Reaction lag time, nitrogenous biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, days
+82137	Physical Property	Reaction lag time, biochemical oxygen demand, water, unfiltered, 20 degrees Celsius, days
+82259	Physical Property	Street debris smaller than 0.031 millimeters, sieve diameter, percent
+82260	Physical Property	Street debris smaller than 0.0625, millimeters, sieve diameter, percent
+82261	Physical Property	Street debris smaller than 0.125 millimeters, sieve diameter, percent
+82262	Physical Property	Street debris smaller than 0.25 millimeters, sieve diameter, percent
+82263	Physical Property	Street debris smaller than 0.5 millimeters, sieve diameter, percent
+82264	Physical Property	Street debris smaller than 1 millimeter, sieve diameter, percent
+82265	Physical Property	Street debris smaller than 2 millimeters, sieve diameter, percent
+82266	Physical Property	Street debris smaller than 4 millimeters, sieve diameter, percent
+82285	Physical Property	Rate of dry deposition, milligrams per square meter per day
+82286	Physical Property	Solids in rainfall, dry weight, milligrams per liter
+82300	Physical Property	Snow depth, inches
+82301	Physical Property	Sample location, snow course, from beginning marker, feet
+82363	Physical Property	Dry deposition, milligrams per square meter
+82371	Physical Property	Precipitation within 3 days before sample collection, inches
+82372	Physical Property	Precipitation within 14 days before sample collection, inches
+82375	Physical Property	Solids, total, accumulation rate, dry weight, grams per square meter per day
+82377	Physical Property	Fraction of curb-miles in catchment swept per day
+82379	Physical Property	Street solids load removed by sweeping, pounds per curb-mile
+82380	Physical Property	Street solids total dry weight, pounds per curb-mile
+82381	Physical Property	Precipitation total, inches per storm
+82398	Physical Property	Sampling method, code
+82463	Physical Property	Residue on evaporation, dried at 105 degrees Celsius, total, dry atmospheric deposition, milligrams per kilogram
+82464	Physical Property	Solids, insoluble, dry atmospheric deposition, residue at 105 degrees Celsius, milligrams per kilogram
+82465	Physical Property	Solids, soluble, dry atmospheric deposition, residue at 105 degrees Celsius, milligrams per kilogram
+82466	Physical Property	Solids, total, dry atmospheric deposition, sum of constituents, milligrams per kilogram
+82467	Physical Property	Solids, insoluble, dry atmospheric deposition, sum of constituents, milligrams per kilogram
+82468	Physical Property	Solids, soluble, dry atmospheric deposition, sum of constituents, milligrams per kilogram
+82550	Physical Property	Pressure, osmotic, water, unfiltered, milliosmoles per kilogram
+82583	Physical Property	pH, soil, standard units
+82632	Physical Property	Area, cross section, square feet
+82903	Physical Property	Depth to bottom from water surface, at sampling location, meters
+82923	Physical Property	Atmospheric deposition type, wet, code
+83104	Physical Property	pH, wet atmospheric deposition, unfiltered, calculated, standard units
+83105	Physical Property	Check solution pH, wet atmospheric deposition, unfiltered, standard units
+83106	Physical Property	pH, wet atmospheric deposition, unfiltered, field, standard units
+83107	Physical Property	pH, wet atmospheric deposition, unfiltered, lab, standard units
+83150	Physical Property	Specific conductance, wet atmospheric deposition, filtered, calculated, microsiemens per centimeter at 25 degrees Celsius
+83151	Physical Property	Specific conductance, wet atmospheric deposition, unfiltered, calculated, microsiemens per centimeter at 25 degrees Celsius
+83152	Physical Property	Check solution specific conductance, wet atmospheric deposition, unfiltered, microsiemens per centimeter at 25 degrees Celsius
+83153	Physical Property	Specific conductance, wet atmospheric deposition, filtered, field, microsiemens per centimeter at 25 degrees Celsius
+83154	Physical Property	Specific conductance, wet atmospheric deposition, unfiltered, field, microsiemens per centimeter at 25 degrees Celsius
+83155	Physical Property	Specific conductance, wet atmospheric deposition, filtered, laboratory, microsiemens per centimeter at 25 degrees Celsius
+83156	Physical Property	Specific conductance, wet atmospheric deposition, unfiltered, laboratory, microsiemens per centimeter at 25 degrees Celsius
+83177	Physical Property	Atmospheric deposition, wet, liters
+83205	Physical Property	Atmospheric deposition type, bulk, code
+83386	Physical Property	pH, bulk atmospheric deposition, unfiltered, calculated, standard units
+83387	Physical Property	Check solution pH, bulk atmospheric deposition, unfiltered, standard units
+83388	Physical Property	pH, bulk atmospheric deposition, unfiltered, field, standard units
+83389	Physical Property	pH, bulk atmospheric deposition, unfiltered, laboratory, standard units
+83432	Physical Property	Specific conductance, bulk atmospheric deposition, filtered, calculated, microsiemens per centimeter at 25 degrees Celsius
+83433	Physical Property	Specific conductance, bulk atmospheric deposition, unfiltered, calculated, microsiemens per centimeter at 25 degrees Celsius
+83434	Physical Property	Check solution specific conductance, bulk atmospheric deposition, unfiltered, microsiemens per centimeter at 25 degrees Celsius
+83435	Physical Property	Specific conductance, bulk atmospheric deposition, filtered, field, microsiemens per centimeter at 25 degrees Celsius
+83436	Physical Property	Specific conductance, bulk atmospheric deposition, unfiltered, field, microsiemens per centimeter at 25 degrees Celsius
+83437	Physical Property	Specific conductance, bulk atmospheric deposition, filtered, laboratory, microsiemens per centimeter at 25 degrees Celsius
+83438	Physical Property	Specific conductance, bulk atmospheric deposition, unfiltered, laboratory, microsiemens per centimeter at 25 degrees Celsius
+83459	Physical Property	Atmospheric deposition, bulk, unfiltered, liters
+84060	Physical Property	Topography, physiographic setting, code
+84143	Physical Property	Well purging condition, code
+85310	Physical Property	Depth of lake, maximum, meters
+85311	Physical Property	Depth of lake, mean, meters
+85328	Physical Property	Depth to 1 percent of surface light, meters
+85540	Physical Property	Air, water, unfiltered, volume percent of dissolved gases
+85541	Physical Property	Inert gases, water, unfiltered, volume percent of dissolved gases
+85544	Physical Property	Carbon dioxide, water, unfiltered, volume percent of dissolved gases
+85550	Physical Property	Dissolved oxygen, water, unfiltered, volume percent of dissolved gases
+85555	Physical Property	Gas/water ratio, cubic feet per barrel
+85557	Physical Property	Temperature, low saturation, degrees Celsius
+85558	Physical Property	Temperature, high saturation, degrees Celsius
+85559	Physical Property	Pressure, low saturation, pounds per square inch
+85560	Physical Property	Pressure, high saturation, pounds per square inch
+85570	Physical Property	Nitrogen, water, unfiltered, cubic centimeters per gram at standard temperature and pressure
+85571	Physical Property	Carbon dioxide, water, unfiltered, cubic centimeters per gram at standard temperature and pressure
+85572	Physical Property	Methane, water, unfiltered, cubic centimeters per gram at standard temperature and pressure
+85573	Physical Property	Dissolved oxygen, water, unfiltered, cubic centimeters per gram at standard temperature and pressure
+85583	Physical Property	Temperature, intragravel water, degrees Celsius
+85599	Physical Property	Rainfall, total for defined period, centimeters
+85822	Physical Property	Moisture content, biota, tissue, wet weight, percent of total weight
+90010	Physical Property	Temperature, area-weighted-average, degrees Celsius
+90034	Physical Property	Depth to 1 percent of surface light, cross section average, feet
+90077	Physical Property	Transparency, water, in situ, Secchi disc, cross section average, inches
+90094	Physical Property	Specific conductance, water, unfiltered, area weighted average, microsiemens per centimeter at 25 degrees Celsius
+90095	Physical Property	Specific conductance, water, unfiltered, laboratory, microsiemens per centimeter at 25 degrees Celsius
+90198	Physical Property	Depth to 10 percent surface light, cross section average, feet
+90199	Physical Property	Depth to 50 percent surface light, cross section average, feet
+90200	Physical Property	Incident light intensity, 400-700 nanometers, cross-sectional average, microeinsteins per square meter per second
+90300	Physical Property	Dissolved oxygen, water, unfiltered, area weighted average, milligrams per liter
+90400	Physical Property	pH, water, area weighted average, standard units
+90860	Physical Property	Salinity, water, unfiltered, practical salinity units at 25 degrees Celsius
+91011	Physical Property	Solids, settleable in 15 minutes, water, unfiltered, milliliters per liter
+91016	Physical Property	Biochemical oxygen demand, water, unfiltered, 5 days at 20 degrees Celsius, tons per day
+91017	Physical Property	Suspended solids, dried at 110 degrees Celsius, water, unfiltered, tons per day
+91055	Physical Property	Suspended solids, dried at 105 degrees Celsius, water, unfiltered, tons per day
+91056	Physical Property	Loss on ignition, from suspended solids, water, unfiltered, tons per day
+91104	Physical Property	Weight of organism, total, grams
+91105	Physical Property	Weight of sampled tissue from organism, grams
+91106	Physical Property	Length of organism, centimeters
+95902	Physical Property	Noncarbonate hardness, water, milligrams per liter as calcium carbonate
+99019	Physical Property	Water level, depth below land surface, meters
+99020	Physical Property	Elevation above NGVD 1929, meters
+99030	Physical Property	Distance, observation point to sample location, meters
+99031	Physical Property	Distance, horizontal, observation point to sampling location, meters
+99060	Physical Property	Discharge, cubic meters per second
+99061	Physical Property	Discharge, instantaneous, cubic meters per second
+99065	Physical Property	Gage height, above datum, meters
+99066	Physical Property	Hyporheic flux of water from ground water to surface water, milliliters per square centimeter per day
+99231	Physical Property	Electrical resistance, ohms
+99232	Physical Property	Volumetric soil moisture content period, for internal control of sensor, milliseconds
+99401	Physical Property	Residue, dissolved, water, filtered, estimated by regression equation, milligrams per liter
+99402	Physical Property	Residue, suspended, water, unfiltered, estimated by regression equation, milligrams per liter
+99403	Physical Property	Residue, total, water, unfiltered, estimated by regression equation, milligrams per liter
+99420	Physical Property	Dissolved oxygen, water, unfiltered, pounds per day
+99772	Physical Property	Precipitation, millimeters
+99872	Physical Property	Turbidity, water, unfiltered, laboratory, Hach 2100AN, nephelometric turbidity units
+99974	Physical Property	Specific conductance, 1 meter below water surface, microsiemens per centimeter at 25 degrees Celsius
+99975	Physical Property	pH, 1 meter below water surface, standard units
+99976	Physical Property	Temperature, 1 meter below water surface, degrees Celsius
+99977	Physical Property	Dissolved oxygen, water, unfiltered, 1 meter below surface, milligrams per liter
+99978	Physical Property	Specific conductance, water, 1 meter above bottom, microsiemens per centimeter at 25 degrees Celsius
+99979	Physical Property	pH, water, 1 meter above bottom, standard units
+99980	Physical Property	Temperature, water, 1 meter above bottom, degrees Celsius
+99981	Physical Property	Dissolved oxygen, water, unfiltered, 1 meter above bottom, milligrams per liter
+99982	Physical Property	Specific conductance, water, mid-depth, microsiemens per centimeter at 25 degrees Celsius
+99983	Physical Property	pH, water, mid-depth, standard units
+99984	Physical Property	Temperature, water, mid-depth, degrees Celsius
+99985	Physical Property	Dissolved oxygen, water, unfiltered, mid-depth, milligrams per liter
+99986	Physical Property	Solar radiation (average flux density on a horizontal surface during measurement interval), watts per square meter
+99987	Physical Property	Solar radiation (total flux density on a horizontal surface during measurement interval), megajoules per square meter
+99988	Physical Property	Photosynthetically active radiation (average flux density on a horizontal surface during measurement interval), micromoles of photons per square meter per second
+99989	Physical Property	Photosynthetically active radiation (total flux density on a horizontal surface during measurement interval), millimoles of photons per square meter
+99997	Physical Property	Photosynthetically active radiation (PAR) in water at the 1% light level, micromoles of photons per square meter per second

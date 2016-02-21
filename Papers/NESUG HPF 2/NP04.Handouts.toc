@@ -1,0 +1,13 @@
+\contentsline {section}{Confidence Intervals as Regions}{1}{section*.2}
+\contentsline {section}{Date Axis}{2}{section*.3}
+\contentsline {section}{ODS Graphics}{3}{section*.4}
+\contentsline {section}{Sparklines}{5}{section*.5}
+\contentsline {subsection}{Small Stacked Graphics}{5}{section*.6}
+\contentsline {section}{Example - Time Series Diagnostics}{6}{section*.7}
+\contentsline {subsection}{Long Period Correlations - 768 Lags}{6}{section*.8}
+\contentsline {subsection}{Short Period Correlations }{6}{section*.9}
+\contentsline {subsection}{Comparative Boxplots}{6}{section*.10}
+\contentsline {subsection}{$\chi ^2$ Probabilities}{6}{section*.11}
+\contentsline {subsection}{Time Series}{6}{section*.12}
+\contentsline {section}{References}{7}{section*.13}
+\contentsline {section}{Contact Information}{8}{section*.14}

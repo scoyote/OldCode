@@ -1,0 +1,9 @@
+\contentsline {section}{Obtaining and Preparing the Stream Data}{1}{section*.2}
+\contentsline {subsection}{Site Inventory}{1}{section*.3}
+\contentsline {subsection}{Data Extraction}{1}{section*.4}
+\contentsline {subsubsection}{URL Access Method of Filename Statement}{2}{section*.5}
+\contentsline {subsubsection}{Preparing the Data}{2}{section*.6}
+\contentsline {subsubsection}{Correcting Anomalies}{3}{section*.7}
+\contentsline {section}{Forecasting with HPF}{3}{section*.8}
+\contentsline {section}{References}{5}{section*.9}
+\contentsline {section}{Contact Information}{6}{section*.10}

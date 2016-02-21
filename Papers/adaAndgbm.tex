@@ -1,0 +1,327 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This file is a template using the "beamer" package to create slides for a talk or presentation
+% - Talk at a conference/colloquium.
+% - Talk length is about 20min.
+% - Style is ornate.
+
+% MODIFIED by Jonathan Kew, 2008-07-06
+% The header comments and encoding in this file were modified for inclusion with TeXworks.
+% The content is otherwise unchanged from the original distributed with the beamer package.
+
+\documentclass{beamer}
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+%  \usetheme{Boadilla}
+  \usetheme{Singapore}
+  \setbeamercovered{transparent}
+}
+
+\usepackage{relsize}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\usepackage{fancyvrb}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+
+\title[Classification and Regression Trees\\ with \texttt{ada} and \texttt{gbm}] % (optional, use only with long paper titles)
+{Classification and Regression Trees\\ with \texttt{ada} and \texttt{gbm}}
+
+\author
+{Samuel Croker}
+
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%\begin{frame}{Outline}
+%  \tableofcontents
+  % You might wish to add the option [pausesections]
+%\end{frame}
+
+
+% Structuring a talk is a difficult task and the following structure
+% may not be suitable. Here are some rules that apply for this
+% solution: 
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+% - A conference audience is likely to know very little of what you
+%   are going to talk about. So *simplify*!
+% - In a 20min talk, getting the main ideas across is hard
+%   enough. Leave out details, even if it means being less precise than
+%   you think necessary.
+% - If you omit details that are vital to the proof/implementation,
+%   just say so once. Everybody will be happy with that.
+
+\section{Introduction}
+
+\begin{frame}{Stochastic Boosting}
+\begin{itemize}
+\item Supervised learning
+\item Algorigthm - Schapire 1990 (AdaBoost 1996)
+\item Ensemble of weak learners
+\item Works well for categorical features
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{R Packages for Stochastic Boosting}
+
+\begin{itemize}
+	\item \texttt{ada} - Discrete, simple implementation
+	\item \texttt{gbm} - Generalized boosting, regression 
+	\item \texttt{mboost} - Generalized boosting, regression 
+\end{itemize}
+\end{frame}
+
+%#######################################################################
+\section{Clasification with \texttt{ada}}
+
+
+\begin{frame}[fragile]{Source Data}
+\scriptsize
+\begin{verbatim}
+
+> str(stwX)
+'data.frame':	10691 obs. of  13 variables:
+ $ XD1: int  4 6 3 6 2 6 4 4 2 3 ...
+ $ YD : chr  "O" "O" "O" "O" ...
+ $ XD2: Factor w/ 3 levels "...",..: 2 2 2 2 2 2 2 2 2 2 ...
+ $ XD3: Factor w/ 2 levels "","UNK": 2 2 2 2 2 2 2 2 2 2 ...
+ $ XD4: Factor w/ 41 levels "Acute Facility",..: 13 13 11 15 13 11 15 9 9 11 ...
+ $ XC1: num  2296 295 3298 136 1692 ...
+ $ XC2: int  7 9 7 5 5 8 8 9 39 5 ...
+ $ Y  : int  8 8 7 11 18 6 6 6 17 14 ...
+ $ XCN: int  1 1 1 1 1 1 1 1 1 1 ...
+ $ XD5: Factor w/ 18 levels "...",..: 5 9 17 10 10 7 17 17 17 18 ...
+ $ XD6: Factor w/ 7 levels ".",..: 2 2 2 2 2 2 2 2 2 2 ...
+ $ XD7: Factor w/ 3 levels "I","O","Other": 2 2 2 2 2 2 2 2 2 2 ...
+ $ rnd: num  0.485 0.48 0.987 0.185 0.158 ...
+\end{verbatim}
+\normalsize
+\end{frame}
+
+
+\begin{frame}[fragile]{Data Preperation}
+\scriptsize
+\begin{verbatim}
+stwX <- transform(stwX,YD=ifelse(Y<=5,'E','O'))
+stwX <- data.frame(stwX,rnd=runif(length(stwX[,1])))
+
+est <- subset(stwX,rnd<0.8)[,c(1,2,4,5,6,7,10:12)]
+val <- subset(stwX,rnd >=0.8)[,c(1,2,4,5,6,7,10:12)]
+
+n <- length(est[,1])
+train<-sample(1:n,floor(.7*n),FALSE)
+test<-setdiff(1:n,train)
+\end{verbatim}
+\normalsize
+\end{frame}
+
+\begin{frame}[fragile]{Data Density}
+
+\includegraphics[height=2.25in]{Images/adaProfile.pdf}
+\end{frame}
+
+\begin{frame}[fragile]{\texttt{ada} Call}
+\scriptsize
+\begin{verbatim}
+
+bt.fit <- ada(YD ~ .
+              , data = est[train,],
+              iter=500
+              ,nu=.1
+              ,type='discrete')
+
+bt.fit <- addtest(bt.fit,test.x=est[test,-2]
+                        ,test.y=est[test,2])
+\end{verbatim}
+\normalsize
+\end{frame}
+
+\begin{frame}[fragile]{Evaluating Training Step}
+\scriptsize
+\begin{verbatim}
+
+> summary(bt.fit)
+Call:
+ada(YD ~ ., data = est[train, ]
+             , iter = 500, nu = 0.1, type = "discrete")
+Loss: exponential Method: discrete   Iteration: 500 
+Training Results
+Accuracy: 0.737 Kappa: 0.477 
+Testing Results
+Accuracy: 0.707 Kappa: 0.415 
+\end{verbatim}
+\normalsize
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Identifying Optimal Cutoff I}
+\scriptsize
+\begin{verbatim}
+> PredBTlook<- data.frame(obs=val$YD,predict=pred1$class)
+ 
+> stcPred(PredBT$predict,PredBT$obs)
+[1] "(MDT,MST) = ( 0.459209308105611 , 0.54264704394395 )"
+[1] "(MDT,MST) = ( 0.719111969111969 , 0.846525096525097 )"
+[1] "(MDT,MST) = ( 0.718637992831541 , 0.636200716845878 )"
+\end{verbatim}
+\includegraphics[height=2in]{Images/roc.pdf}
+\normalsize
+\end{frame}
+
+
+\begin{frame}[fragile]{Identifying Optimal Cutoff II}
+\includegraphics[height=3in]{Images/cutoff.pdf}
+\end{frame}
+
+
+\begin{frame}[fragile]{Accuracy, Sensitivity and Specificity}
+\scriptsize
+\begin{verbatim}
+> precision(.45,PredBT$predict,PredBT$obs)
+       ob
+          E   O
+  FALSE 731 307
+  TRUE  305 809
+[[1]]
+       ob
+          E   O
+  FALSE 731 307
+  TRUE  305 809
+
+[[2]]
+specificity sensitivity 
+  0.7055985   0.7249104 
+
+[[3]]
+Negative Predictive Accuracy Positive Predictive Accuracy 
+                   0.7042389                    0.7262118 
+\end{verbatim}
+\normalsize
+\end{frame}
+
+
+
+
+
+\section{Boosted Regression Trees with \texttt{gbm}}
+
+\begin{frame}[fragile]{\texttt{gbm} Call}
+\scriptsize
+\begin{verbatim}
+est <- subset(stwA,rnd < 0.8)[,c(1,4:8,10:12)]
+val <- subset(stwA,rnd >=0.8)[,c(1,4:8,10:12)]
+
+gbm.fit <- gbm(log(Y) ~ ., data=est,
+    distribution=list(name='quantile',alpha=0.5),
+    n.trees=1000,
+    shrinkage=.05,
+    interaction.depth=5,
+    bag.fraction=.5,
+    train.fraction=.5,
+    cv.folds=5,
+    keep.data=T,
+    verbose=F
+)
+\end{verbatim}
+\normalsize
+\end{frame}
+
+\begin{frame}[fragile]{Fit Diagnostics}
+\includegraphics[height=3in]{Images/gbmIteration.pdf}
+\end{frame}
+
+
+\begin{frame}[fragile]{}
+\scriptsize
+\begin{verbatim}
+> best.iter <- gbm.perf(gbm.fit,method="cv")
+> print(best.iter)
+[1] 40
+
+> summary(gbm.fit,n.trees=best.iter)
+    var   rel.inf
+XD5 XD5 34.994135
+XD4 XD4 24.465712
+XD1 XD1 21.217152
+XC2 XC2  9.733716
+XC1 XC1  7.938009
+XD3 XD3  1.651275
+XD6 XD6  0.000000
+XD7 XD7  0.000000
+\end{verbatim}
+\normalsize
+\end{frame}
+
+
+\begin{frame}[fragile]{Observed vs Predicted}
+\begin{centering}
+\includegraphics[height=3in]{Images/gbm_obsvspred.pdf}
+\end{centering}
+\end{frame}
+
+
+\begin{frame}[fragile]{}
+\scriptsize
+\begin{verbatim}
+ggplot(data=pre) + 
+  geom_jitter(aes(x=obs,y=pred)) + 
+  geom_line(data=z,aes(x=b,y=b)) +
+  geom_density2d(aes(x=obs,y=pred)) +
+  scale_x_continuous(trans='log', 
+          breaks=c(seq(0,40,5),75,100,150,200)) +
+  scale_y_continuous(breaks=c(seq(0,20,5))) +
+  theme_bw()
+\end{verbatim}
+\normalsize
+\end{frame}
+
+\section{References and Suggested Reading}
+\begin{frame}[fragile]{Suggested Reading}
+
+\begin{description}
+\scriptsize
+\item[ECOL/BIOL 563 Statistical Methods in Ecology]\url{http://www.unc.edu/courses/2010fall/ecol/563/001/}
+\item[ada: An R Package for Stochastic Boosting; Culp, Johnson, Michailidis]\url{http://www.stat.wvu.edu/~mculp/math/ada/ada_manual.pdf}
+\item[Generalized Boosted Models: A guide to the gbm package,Ridgeway]\url{http://cran.open-source-solution.org/web/packages/gbm/vignettes/gbm.pdf}
+\item[Visualizing Classifier Performance in R]\url{http://rocr.bioinf.mpi-sb.mpg.de/}
+\end{description}
+\normalsize
+\end{frame}
+\end{document}
+
+

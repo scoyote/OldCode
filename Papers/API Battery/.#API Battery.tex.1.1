@@ -1,0 +1,198 @@
+%% name       : sugconf-example.tex
+%% description: example of LaTeX document class sugconf
+%% purpose    : illustrate use of LaTeX markup
+%%              for SAS User Group conference authors
+%% author     : Ronald J. Fehd for CTAN
+%% date       : 8/10/2006
+%% note       : all text after a percent sign (%) is a comment
+%% note       : open *.pdf, <Ctrl> D to view pdf description
+%% make       : pdflatex sugconf-example
+
+\documentclass{sugconf}
+
+%macro variables used by sugconf
+\sugconfsubject{SAS 9.1.3, Microsoft Windows API, }%
+\sugconfpapernumber{Paper 999-99}%
+%\sugconfpapernumber{\relax}%note: no paper number: warning in log
+\sugconfkeywords{Base SAS, MODULEN, SASCBTBL, Microsoft Windows XP/2000, Microsoft Windows API, GetSystemPowerStatus, SAS/GRAPH}%end keywords: see in pdf description
+
+%begin LaTeX document commands
+%% NOTE: do not put newline (\\) in title nor author
+
+\title{DRAFT -- "Powerful" Functions from the Windows API -- DRAFT}
+\author{Samuel T. Croker}
+\makeatletter
+\usepackage[bookmarks   =false
+           ,pdfauthor   ={\@author}
+           ,pdfcreator  ={pdfLaTeX sugconf.cls}
+           ,pdfkeywords ={\SUGconfKeywords}
+           ,pdfstartview=FitBH
+           ,pdfsubject  ={\SUGconfSubject}
+           ,pdftitle    ={\@title}
+]{hyperref}\makeatother\begin{document}
+
+\begin{abstract}Ever wonder how well that old laptop battery is performing?  Is it possible to do online tests of a laptop battery to determine the best power configuration?  Need a way to cleanly exit a \SASregistered process when the laptop battery is low or the system switches to auxiliary power? The Microsoft Windows API provides a method for polling system power sources and SAS makes designing a simple power source querying system easy.
+ Keywords: \SUGconfKeywords.
+\end{abstract}
+
+\section{Introduction}
+
+The Windows API is a very useful group of methods and properties
+that are available to developers on a Windows platform.  This type
+of API is also available to many other platforms but will not be
+covered by this document.  There have been several very good papers
+written on how to use the Windows API so this example will only
+cover the barest of details as to using the Windows API.  See the
+references section for more information.
+
+\section{Windows API and SAS Basics}
+The functions within the Windows API must first be prototyped before
+they are available to SAS.  This prototype is stored in a file
+reference that has to be called \verb"SASCBTBL".  This fileref is
+known to SAS and is used implicitly by the \verb"MODULEN" or other
+\verb"CALL MODULEx" routines. Richard A. DeVenezia uses the
+following simple method for building the prototype into a SAS
+program.  It is a good method and it is adopted here.
+
+For this example, the \textit{GetSystemPowerStatus} function will be
+explored. In <<PAPER REFERENCE>> it is shown how to build a SASCBTBL
+routine from the Microsoft Windows  API definition.  For the
+\verb"GetSystemPowerStatus" function, it was necessary to experiment
+a little with the informats in order to get meaningful data.  The
+\verb"IB4." informat was the only informat that correctly loaded the
+integer data of \verb"BatteryLifetime" and
+\verb"BatteryFullLifetime".  The boolean values were only correctly
+loaded using \verb"IB1.".
+
+The SASCBTBL file begins after the CARDS4 statement.  Everything
+following the ROUTINE statement is very important for successful
+calling of the Windows API function.  The line
+\begin{verbatim}* LPSYSTEM_POWER_STATUS lpSystemPowerStatus ;\end{verbatim}
+is not a comment and is very important because it specifies the data
+structure that is returned by the GetSystemPowerStatus function.
+
+Executing this data step will build a SOURCE entry in the
+work.example.winbatt.source catalog entry.  A Source Catalog Entry
+is the same thing as a text file except that it is stored as a
+binary coallation within a SAS Catalog.  This FILEREF could just as
+easily be a text file.
+
+\section{Calling the API Function}
+
+The following macro is a building block for a more complex example.
+
+The core of the Windows API access of this data step is the MODULEN
+function.  The call routine CALL MODULEN can also be used for this
+type of access to the Windows API.  The use of the MODULE function
+or call routine implicitly accesses the SASCBTBL file reference, so
+it has to exist for the function call to work. From this point
+forward, only the MODULEN function is discussed.  The RC variable
+contains the return code for the modulen function and can be used to
+check for error conditions. This error checking is omitted in the
+example above but is shown in Appendix A.
+
+So for each observation in the resulting data set (or null dataset
+as above) it is necessary to first define the data set variables
+that will contain the data that is returned by the MODULEN function.
+In the example, this is done by setting each of the variables to
+null values.  Remember what the file that the SASCBTBL fileref
+references looks like.  There are six values that the SASCBTBL
+specifies that will be returned.  By defining these variables in the
+data step, then using them in the MODULEN function, the variables
+are associated with what is returned by the GetSystemPowerStatus
+Windows API function.  In other words, MODULEN accesses the Windows
+API and links the parameters, or data step variables,  in its call
+to the arguments in the ROUTINE statement.  If the MODULEN call is
+successful, then the data step variables will contain the values
+that were returned by the Windows API call.  The data step variables
+can be named anything since the ROUTINE statement and the Windows
+API function do not require names. The formats of the routine
+statment and the data step variables must be of the correct length
+for the data to make sense.
+
+\section{Building A Battery Profile}
+The following macro takes the first example a little farther by
+adding iterative functionality to poll the battery at an interval,
+then store the data so that it can be compared to other experiments.
+This is done using five macro parameters:
+
+\begin{description}
+  \item[group] Suffix for each variable to differentiate between
+  datasets on merge
+  \item[cutoff] Lowest percent for polling to accomodate power
+  shutdowns
+  \item[sampleint] Time in seconds to wait between pollings
+  \item[dsname] Name of dataset for the group
+  \item[appendto] Name of dataset to append results to
+\end{description}
+
+
+\subsection{A Few Notes...}
+Although it is less directly usable, the battery lifetime is a bit
+more continuous than the percent.  I need to check on this but it
+could be a close derivative of the amount of actual power remaining
+in the battery itself.  It is not the best measure of the actual
+amount of life left in the battery but it does provide a more
+granular measure of the battery lifetime.
+
+\subsection{Displaying the Results}
+
+The only difficulty in displaying associated graphs is knowing how
+to line up the starting points.  Here the graphs are started at the
+beginning of each run.
+
+\section{Exiting SAS Processes at Power Threshold}
+The hibernate or standby feature of most laptops is not always the
+best method for ending a long running process in SAS.  If this is a
+problem or if the system is operating on a UPS with limited off-AC
+runtime it is nice to be able to cleanly exit the SAS process before
+the system goes into hibernate or standby mode.
+
+\section{Conclusion}
+Connecting SAS to the Windows API can be useful in many ways.  The
+GetSystemPowerSource function allows SAS to query the battery a
+laptop or UPS system.  This functionality can be used to build power
+drain curves for various power configurations, or to control SAS
+processes when the power level falls below a certain threshold.
+
+\section{References}
+
+\begin{tabular}[t]{llll}
+\textbf{Required}
+&   \SASregistered with the Windows API & David H. Johnson \\
+& \multicolumn{2}{l}{\tiny\url{
+http://www2.sas.com/proceedings/sugi30/248-30.pdf
+}}\\
+\textbf{Recommended} &   SASCBTBL Routine Statements & Richard A. DeVenezia \\
+& \multicolumn{2}{l}{\tiny\url{
+http://www.devenezia.com/downloads/sas/sascbtbl/
+}}\\
+&   GetSystemPowerStatus on MSDN & Microsoft Corporation \\
+& \multicolumn{2}{l}{\tiny\url{
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/power/base/getsystempowerstatus.asp
+}}\\
+\end{tabular}
+
+\section{Acknowledgments}
+
+Thanks to all of my colleagues who say "SAS can't do that" for
+encouraging me to prove them wrong.
+
+\section{Contact Information}
+Your comments and questions are valued and encouraged.
+
+Contact the author(s):
+%\begin{tabular}[c]{ll}%both columns are left justtified
+\begin{tabular}[t]{rl}%note: double backslash(\\): newline
+Name               & Samuel T. Croker                \\\
+%Address            & 123 Main St                      \\
+City, State, ZIP   & Lexington, SC 29073               \\
+%Work Phone:        & 987-654-1234                     \\
+%Fax:               & 987-654-3210                     \\
+E-mail:            & \url{mailto:scoyote@scoyote.net}        \\
+%Web:               & mycompany.com                    \\
+\end{tabular}
+
+\SASisRegisteredTrademark%macro variable provided by sugconf.cls
+\OtherTrademarks%macro variable provided by sugconf.cls
+\end{document}

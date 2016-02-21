@@ -1,0 +1,69 @@
+%PDF-1.0 %АРар
+1 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+/Outlines 2 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Outlines
+/Count 0
+>>
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [4 0 R]
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources <<
+/ProcSet [/PDF ]
+>>
+/MediaBox [0 0 432 18]
+/Contents 5 0 R
+>>
+endobj
+5 0 obj
+<</Length 6 0 R >>
+stream
+q 0.0432 w 0 J []0 d 0.000 0.000 0.000 rg 0.000 0.000 0.000 RG -0.0432 -0.0432 m -0.0432 17.9712 l 432 17.9712 l 432 -0.0432 l W S 1.000 1.000 1.000 rg 1.000 1.000 1.000 RG 0 0 m 0 17.9712 l 432 17.9712 l 432 0 l 0 0 l B* 0.000 0.000 0.000 rg 0.000 0.000 0.000 RG 0.000 0.000 0.000 rg 0.000 0.000 0.000 RG 7.7328 0.2592 m 8.856 0.2592 l 10.0224 17.7552 l 11.1456 2.4624 l S 0.000 0.000 1.000 rg 0.000 0.000 1.000 RG 7.7328 0.2592 m 10.0224 4.6224 l 11.1456 4.6224 l S Q
+endstream
+endobj
+6 0 obj
+469
+endobj
+7 0 obj
+<<
+/Creator (SAS/GRAPH)
+/Author (SAS Institute Inc.)
+/Producer (GPLOT351) 
+/Title (Plot of ACTUAL * STAYDATE) 
+/CreationDate (D:20070905140103-04)
+>>
+endobj
+xref
+0 8
+0000000000 65535 f
+0000000016 00000 n
+0000000088 00000 n
+0000000140 00000 n
+0000000204 00000 n
+0000000335 00000 n
+0000000862 00000 n
+0000000884 00000 n
+trailer
+<<
+/Size 8
+/Root 1 0 R
+/Info 7 0 R
+>>
+startxref
+1057
+%%EOF

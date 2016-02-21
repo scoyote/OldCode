@@ -1,0 +1,44 @@
+\documentclass{slides}
+%%% BEGIN PREAMBLE
+
+\usepackage{geometry}
+\geometry{screen}
+
+\title{SESUG 2007 \\ Automated Streamflow Forecasting Using SAS}
+\author{Samuel T. Croker}
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+\maketitle
+
+Topics
+
+\begin{itemize}
+\item Time Series Modeling Compared to High Performance Forecasting
+\item SAS High Performance Forecasting System
+\item Forecasting Examples
+\end{itemize}
+
+\newpage
+
+Smoothing Models
+
+\newpage
+
+ARIMA Models
+
+\newpage
+
+Automatic Forecasting Techniques
+
+Automatic Forecasting differs from traditional modeling in that the goal is to minimize forecast error by selecting from a predefined list the model with the lowest MAPE or other statistic.  Each model is fit and then multistep forecasts are generated over a holdout period of know data.  These forecasts are then compared to the known data.
+
+Commonly Used Statistics
+
+Mean Average Percent Error (MAPE)  $\frac{1}{N}$
+Mean Average Error (MAE)
+Symmetric Mean Average Percent Error (SMAPE)
+
+
+\end{document}

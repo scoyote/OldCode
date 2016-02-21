@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+#####################################################################################
+#####  sasmon       
+#####  author:  Samuel T. Croker
+#####  Created: 7/30/09
+#####  Purpose: 
+#####  Exec:	
+#####
+#####################################################################################
+
+
+my $arr;
+     my @out = qx/more \/etc\/passwd |grep ^k/;
+     foreach my $line(@out)
+     {
+	my @arr = split(':', $line);
+	print   "$arr[0]\n";
+	system "resetUserDirPerms $arr[0] /home/$arr[0]";	
+	system "resetUserDirPerms $arr[0] /home/$arr[0]/sasuser.v92";	
+	system "resetUserDirPerms $arr[0] /home/$arr[0]/oldconfig";	
+	}
+
+

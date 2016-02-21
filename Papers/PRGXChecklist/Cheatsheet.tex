@@ -1,0 +1,172 @@
+\documentclass{article}
+
+\usepackage{multicol}
+
+\setlength{\textheight}{7.5 in}
+\setlength{\textwidth}{10 in}
+\setlength{\hoffset}{-2 in}
+\setlength{\voffset}{-1 in}
+\setlength{\footskip}{12 pt}
+\setlength{\oddsidemargin}{1.5 in}
+\setlength{\evensidemargin}{1.5 in}
+\setlength{\topmargin}{.5 in}
+\setlength{\headheight}{12 pt}
+\setlength{\headsep}{0 in}
+
+\setlength{\parindent}{0 in}
+
+\ifx \pdfpagewidth \undefined
+\else
+ \pdfpagewidth=11in    % page width of PDF output
+ \pdfpageheight=8.5in  % page height of PDF output
+\fi
+
+\begin{document}
+\thispagestyle{empty}
+\fontsize{9}{10}\selectfont
+
+\newcommand{\key}[2]{#1 \hfill \texttt{#2}\par}
+\newcommand{\head}[1]{{\large\textbf{#1}}\\}
+
+
+{\Large PRGX Data Analysis Quick Reference Card}
+\begin{multicols}{3}
+\vskip 15pt
+
+\vbox{\head{Servers and Databases}
+\tiny 
+\begin{itemize}
+\item  \texttt{USATL02MDSQ06 - Region D HDI Data}
+	\begin{itemize}
+		\item  \texttt{ADSSandbox}
+		\item  \texttt{DS\_SPECTRUM}
+		\item  \texttt{HEALTHCARE\_SYNERMED\_2010\_C}
+		\item  \texttt{KAISER\_PERMANENTE\_MID\_ATLANTIC\_2009\_SHALF\_C}
+		\item  \texttt{KAISER\_PERMANENTE\_MID\_ATLANTIC\_2010\_FHALF\_C}
+		\item  \texttt{KAISER\_PERMANENTE\_MID\_ATLANTIC\_2009\_SHALF\_C}
+		\item  \texttt{MEDICARE\_RACD\_HDI\_CARRIER\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACD\_HDI\_HHA\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACD\_HDI\_OUTPATIENT\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACD\_HDI\_SNF\_2007\_2013\_C}
+	\end{itemize}     
+\item  \texttt{USATL02MDSQ20}
+\begin{itemize}
+		\item  \texttt{ADSSandbox}
+		\item  \texttt{DS\_SPECTRUM}
+		\item  \texttt{STATE\_OF\_TEXAS\_MEDICAID\_TMHP\_2005\_2007\_S}
+	\end{itemize}     
+\item  \texttt{USATL02MDSQ22 - Region B CGI Data}
+\begin{itemize}
+		\item  \texttt{MEDICARE\_RACB\_CGI\_CARRIER\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACB\_CGI\_DMERC\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACB\_CGI\_HHA\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACB\_CGI\_HOSPICE\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACB\_CGI\_OUTPATIENT\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACB\_CGI\_SNF\_2007\_2013\_C}
+	\end{itemize}  
+\item  \texttt{USATL02MDSQ24 - Region A DCS Data}
+\begin{itemize}
+		\item  \texttt{MEDICARE\_RACA\_DCS\_CARRIER\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACA\_DCS\_HHA\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACA\_DCS\_HOSPICE\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACA\_DCS\_OUTPATIENT\_2007\_2013\_C}
+		\item  \texttt{MEDICARE\_RACA\_DCS\_SNF\_2007\_2013\_C}
+	\end{itemize}  
+\item  \texttt{USATL02MDSQ31 - Operations and CDA}
+\begin{itemize}
+	\item  \texttt{ADSMEDICARESANDBOX}
+	\item  \texttt{MEDICALCODEREPOSITORY}
+	\item  \texttt{OPSSANDBOX}
+	\item  \texttt{STATE\_OF\_UTAH\_MEDICAID}
+	\item  \texttt{KAISER\_PERMANENTE\_OHIO\_2\_2007\_C}
+	\item  \texttt{KAISER\_PERMANENTE\_OHIO\_2009\_C}
+	\item  \texttt{KAISER\_PERMANENTE\_MID\_ATLANTIC\_2009\_FHALF\_C}
+	\item  \texttt{STANDARD\_MEDICAL\_CODES\_C}
+	\end{itemize}
+\item  \texttt{USATL02MDSQ38 - Healthcare DW}
+\begin{itemize}
+		\item  \texttt{ADSSANDBOX}
+		\item  \texttt{DS\_DELIVERY}
+		\item  \texttt{HEALTHCAREDW}
+		\item \texttt{MODS}
+		\item  \texttt{OPSSANDBOX}
+	\end{itemize}  
+
+\end{itemize}}
+
+\vskip 10pt
+\vbox{\head{SAS Configuration}
+The default SAS configuration file is located at the address shown below.
+Before making changes to this file, save a copy of it before modification using the save date as shown:
+
+\tiny
+\begin{verbatim}
+D:\Program Files\SAS\SASFoundation\9.2\nls\en\SASV9.cfg 
+\end{verbatim}
+\normalsize Copies look like
+\tiny
+\begin{verbatim}
+D:\Program Files\SAS\SASFoundation\9.2\nls\en\SASV9.20110112
+D:\Program Files\SAS\SASFoundation\9.2\nls\en\SASV9.20101215
+\end{verbatim}
+}
+
+\vskip 10pt
+\vbox{\head{SAS SQL Connections}
+Remember to keep all data manipulation of raw data files on the SQL Server databases until you need it for SAS.  The SAS machines have been sized for this and not for data manipulation.  Use the SAS Pass Through utility of PROC SQL to do this all within a SAS program.
+
+The first step is to run the Data Sources utility in Windows.  Be sure to annotate the Data Source Name because this will be the name required in SAS Libname and PROC SQL Connect statements.
+\begin{verbatim}
+proc sql;
+     connect to odbc as CGIDMERC (dsn='CGIDMERC');
+          <SQL pass through and standard code>
+     disconnect from CGIDMERC;
+quit;
+
+\end{verbatim}  Alternately, you can specify all of the datasource 
+When creating libnames, it is a good idea to be very careful as the libname engine can drop tables a little more easily that what is necessary in SQL.  
+\begin{verbatim}
+libname CGIDMERC odbc ................(access=read_only);
+\end{verbatim}
+
+
+}
+
+\vskip 10pt
+\vbox{\head{Remote Desktop Connection}
+RDC is required to connect to the USATL02MDAS02 or USATL02MDAS03 SAS Windows 7 machines.  Login using the "amer\\\emph{your user name}" account and your PRGX Windows password.
+
+If you are working on an aircard or T1, be sure to configure the RDC details to transmit the lowest quality that you can stand.    When you open RDC, select or enter the server name then select Options.  Degrade the settings to the least that you can stand for the best network performance.
+}
+
+\vskip 10pt
+
+\vbox{\head{Link Server Queries}
+}
+
+\vskip 10pt
+
+\vbox{\head{Exclusion-Suppression Stored Procedures}
+}
+
+\vskip 10pt
+
+\vbox{\head{Data Management Rationale}\
+}
+
+\vskip 10pt
+
+\vbox{\head{SharePoint}
+}
+
+\vskip 10pt
+
+\vbox{\head{Putting text}
+}
+
+\end{multicols}
+
+\vspace{\fill}
+\copyright 2010 Samuel T.\ Croker -- licensed under the terms of the GNU
+General Public License 2.0 or later.
+\end{document}
