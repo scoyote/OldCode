@@ -1,0 +1,1 @@
+This is old code that needs a dose of SAS/OR to make it do the right thing. When I wrote this I did not consider geo routing or optimization of routes, but this is possible. Now that I have access to all of this software I should go back and make these changes - not that this is novel code or anything. It has been done many times.  For me it will be an academic exercise.
