@@ -1,0 +1,290 @@
+% University of South Carolina Thesis Style.
+% Intended to conform with the Graduate School's Thesis Guidelines
+%
+% http://www.gradschool.sc.edu/GSbasic/text/PrinterFriendly/Thesis_Guidelines-web_2003.pdf
+%
+% Copyright (C) 2004 by Jose M. Vidal. All Rights Reserved.
+%
+% The author grants permission for anyone to use this macro package and
+% to distribute it unchanged without further restriction.  If you choose
+% to modify this package, you must indicate that you have modified it
+% prior to your distributing it.  I don't want to get bug reports about
+% changes that *you* have made!
+
+\ProvidesPackage{uscthesis}
+\typeout{Document Style Option `uscthesis'.}
+
+\long\def\comment#1{}
+\comment{
+  See sample uscthesis.tex
+}
+\RequirePackage{setspace}
+\RequirePackage{geometry}
+
+%Add hyperlinks. You can comment out this line if its giving you problems.
+%float.sty and algorithm.sty have to be loaded *before* hyperref.
+%Note that later in \hypersetup{} we make links invisible so
+%the printout will look nice. The links still work.
+\RequirePackage[plainpages=false,pdfpagelabels]{hyperref}
+
+% First thing we do is make sure that report has been loaded.  A
+% common error is to try to use uscthesis as a documentstyle.
+\@ifundefined{chapter}{\@latexerr{The `uscthesis' option should be used
+with the `report' document style}{You should probably read the
+uscthesis.tex example.}}{}
+
+\doublespacing
+
+%Set the margins
+\geometry{letterpaper, left=1.5in, top=1in, right=1in, bottom=1in}
+
+%chapter appears two inches below top of page
+\def\@makechapterhead#1{%
+  \vspace*{.4in}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+        \huge\bfseries \@chapapp\space \thechapter
+        \par\nobreak
+        \vskip 20\p@
+    \fi
+    \interlinepenalty\@M
+    \Huge \bfseries #1\par\nobreak
+    \vskip 40\p@
+  }}
+
+%chapter* appears two inches below top of page.
+\def\@makeschapterhead#1{%
+  \vspace*{.4in}
+  {\parindent \z@ \raggedright
+    \normalfont
+    \interlinepenalty\@M
+    \Huge \bfseries  #1\par\nobreak
+    \vskip 40\p@
+  }}
+
+%make the footnote line 2in
+\renewcommand{\footnoterule}{\vspace*{-3pt}%
+  \hrule width 2in height 0.4pt \vspace*{2.6pt}}
+
+%Leave two spaces above and below rule
+%\skip\footins 20pt plus4pt minus4pt
+\addtolength{\skip\footins}{1.5em plus 4pt minus4pt}
+\setlength{\footnotesep}{2em}
+
+% \author, \title are defined in report; here are the rest of the
+% front matter defining macros
+\def\dept#1{\gdef\@dept{#1}}
+\def\directordept#1{\gdef\@directordept{#1}}
+\def\secondreaderdept#1{\gdef\@secondreaderdept{#1}}
+\def\thirdreaderdept#1{\gdef\@thirdreaderdept{#1}}
+\def\abstract#1{\gdef\@abstract{#1}}
+\def\director#1{\gdef\@director{#1}}
+
+\def\authordegree#1{\gdef\@authordegree{#1}}
+\def\degree#1{\gdef\@degree{#1}}
+\def\college#1{\gdef\@college{#1}}
+
+\def\copyrightyear#1{\gdef\@copyrightyear{#1}} % \author, \title in report
+\def\@title{}
+\def\@author{}
+\def\@keywords{}
+\def\@abstract{}
+\def\@director{}
+\def\@degree{Master of Engineering}
+\def\@college{Engineering and Information Technology}
+\def\@dept{Computer Science and Engineering}
+\def\@directordept{Computer Science and Engineering}
+\def\@secondreaderdept{Computer Science and Engineering}
+\def\@thirdreaderdept{Computer Science and Engineering}
+
+\def\makethesistitle{%
+  \@ifundefined{hypersetup}{}{%
+    \hypersetup{%
+      bookmarksnumbered,
+      pdftitle={\@title},
+      pdfauthor={\@author},
+      pdfsubject={\@dept},
+      pdfkeywords={\@keywords},
+      pdfview=FitH,
+      pdfborder=0 0 0, %Make all links invisible, so it looks good when printed
+    }}
+  \pagenumbering{roman}%
+  \thispagestyle{empty}%
+  \begin{center}
+    \textsc{\expandafter{\@title}} \\
+    by\\ 
+    \vspace{2em} \@author\\ 
+    \vspace{2em} 
+    \begin{singlespace}
+      \@authordegree
+    \end{singlespace} 
+    --------------------------------------------------------------\\
+    Submitted in Partial Fulfillment of the \\
+    Requirements for the Degree of \@degree \ in the \\
+    Department of \@dept \\
+    College of \@college \\
+    University of South Carolina \\
+    \@copyrightyear \\
+    \vspace{\stretch{1}}
+    \begin{singlespace}
+      \noindent
+      \begin{minipage}[t]{2.5in}
+        \hrule \vspace{3pt}
+        Department of \@dept \\
+        Director of Thesis
+      \end{minipage}
+      \hfill
+      \begin{minipage}[t]{2.5in}
+        \hrule \vspace{3pt}
+        Department of \@secondreaderdept \\
+        2nd Reader
+      \end{minipage}
+      
+      \noindent
+      \begin{minipage}[t]{2.5in}
+        \vspace{1in}
+        \hrule \vspace{3pt}
+        Department of \@thirdreaderdept \\
+        3rd Reader
+      \end{minipage}
+      \hfill
+      \begin{minipage}[t]{2.5in}
+        \vspace{1in}
+        \hrule \vspace{3pt}
+        Dean of the Graduate School \\
+      \end{minipage}
+    \end{singlespace}
+ \end{center}\newpage}
+
+\def\makedissertationtitle{%
+  \@ifundefined{hypersetup}{}{%
+    \hypersetup{%
+      bookmarksnumbered, 
+      pdftitle={\@title},
+      pdfauthor={\@author},
+      pdfsubject={\@dept},
+      pdfkeywords={\@keywords},
+      pdfview=FitH,
+      pdfborder=0 0 0, %Make all links invisible, so it looks good when printed
+    }}
+  \pagenumbering{roman}%
+  \thispagestyle{empty}%
+  \begin{center}
+    \textsc{\expandafter{\@title}} \\
+    by\\ 
+    \vspace{2em} \@author\\ 
+    \vspace{2em} 
+    \begin{singlespace}
+      \@authordegree
+    \end{singlespace} 
+    --------------------------------------------------------------\\
+    Submitted in Partial Fulfillment of the \\
+    Requirements for the Degree of \@degree \ in the \\
+    Department of \@dept \\
+    College of \@college \\
+    University of South Carolina \\
+    \@copyrightyear \\
+    \vspace{\stretch{1}}    
+    \begin{singlespace}
+      \noindent
+      \begin{minipage}[t]{2.5in}
+        \hrule \vspace{3pt}
+        Major Professor
+      \end{minipage}\hfill \ 
+      
+      \noindent\begin{minipage}[t]{2.5in}
+        \vspace{1in}
+        \hrule \vspace{3pt}
+        Committee Member
+      \end{minipage}
+      \hfill
+      \begin{minipage}[t]{2.5in}
+        \vspace{1in}
+        \hrule \vspace{3pt}
+        Chairman, Examining Committee
+      \end{minipage}
+      
+      \noindent
+      \begin{minipage}[t]{2.5in}
+        \vspace{1in}
+        \hrule\vspace{3pt}
+        Committee Member
+      \end{minipage}
+      \hfill
+      \begin{minipage}[t]{2.5in}
+        \vspace{1in}
+        \hrule \vspace{3pt}
+        Dean of the Graduate School \\
+      \end{minipage}
+    \end{singlespace}
+ \end{center}\newpage}
+
+
+\def\makecopyrightpage{%
+  \begin{center}
+    \vspace{6in}\ \copyright by \@author, \@copyrightyear \\
+    All Rights Reserved.
+  \end{center}}
+
+%\renewenvironment{abstract}{%
+%  \newpage{}
+%  \addcontentsline{toc}{chapter}{Abstract}
+%  \@beginparpenalty\@lowpenalty
+%  \begin{center}%
+%    ABSTRACT \\
+%    \@title \\
+%    \@author \\
+%    \vspace{3em}
+%    \@endparpenalty\@M 
+%  \end{center}}%
+
+\newcommand{\makeumiabstract}{%
+  \newpage{}
+  \addcontentsline{toc}{chapter}{Abstract}
+  \@beginparpenalty\@lowpenalty
+  \begin{center}%
+    ABSTRACT \\
+    \@title \\
+    \@author \\
+    \vspace{3em}
+    \@endparpenalty\@M
+  \end{center}
+  \@abstract \\[2em]
+  \textbf{Dissertation Director:} \@director}%
+
+\def\prefacesection#1{%
+	\chapter*{#1}
+	\addcontentsline{toc}{chapter}{#1}}
+
+% Redefine \thebibliography to go to a new page and put an entry in the
+% table of contents
+\let\@ldthebibliography\thebibliography
+\renewcommand{\thebibliography}[1]{\newpage
+	\addcontentsline{toc}{chapter}{Bibliography}
+	\@ldthebibliography{#1}}
+
+\newcommand{\makelistoffigures}{
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\newpage
+}
+
+\newcommand{\makelistoftables}{
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+\newpage
+}
+
+\newcommand{\makeabstract}{
+  \prefacesection{Abstract}
+  \@abstract}
+
+%Make it easier to place figures
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.65}
+\renewcommand{\floatpagefraction}{0.60}
+
+% Start out normal
+\pagestyle{plain}
+

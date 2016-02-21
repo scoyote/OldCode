@@ -1,0 +1,625 @@
+This is pdfTeX, Version 3.141592-1.11a (MiKTeX 2.3) (preloaded format=latex 2000.11.28)  2 NOV 2005 05:22
+**SamsThesis05.tex
+(SamsThesis05.tex{pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for english, french, german, ngerman, du
+mylang, nohyphenation, loaded.
+(d:\texmf\tex\latex\base\report.cls
+Document Class: report 2001/04/21 v1.4e Standard LaTeX document class
+(d:\texmf\tex\latex\base\size12.clo
+File: size12.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (d:\texmf\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 42.
+)
+(d:\texmf\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(d:\texmf\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+ (d:\texmf\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+)) (d:\texmf\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(d:\texmf\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(d:\texmf\tex\latex\tools\indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(d:\texmf\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(d:\texmf\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(d:\texmf\tex\latex\graphics\graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+ (d:\texmf\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (d:\texmf\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2003/03/12 v1.1 MiKTeX 'graphics' configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(d:\texmf\tex\latex\graphics\pdftex.def
+File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(d:\texmf\tex\latex\floatflt\floatflt.sty
+Package: floatflt 1996/02/27 v. 1.3
+\c@OptionTest=\count101
+\figbox=\box28
+\tabbox=\box29
+\pagebox=\box30
+\ffigcount=\count102
+\ftabcount=\count103
+\fftest=\count104
+\hangcount=\count105
+\nosuccesstryfig=\count106
+\nosuccesstrytab=\count107
+\figgutter=\dimen114
+\tabgutter=\dimen115
+\htdone=\dimen116
+\pageht=\dimen117
+\startpageht=\dimen118
+\tabbredd=\dimen119
+\floatfltwidth=\dimen120
+\fltitemwidth=\dimen121
+\outputpretest=\toks20
+) (uscthesis.sty
+Package: uscthesis 
+
+Document Style Option `uscthesis'.
+(d:\texmf\tex\latex\setspace\setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (d:\texmf\tex\latex\geometry\geometry.sty
+Package: geometry 2002/07/08 v3.2 Page Geometry
+\Gm@cnth=\count108
+\Gm@cntv=\count109
+\c@Gm@tempcnt=\count110
+\Gm@bindingoffset=\dimen122
+\Gm@wd@mp=\dimen123
+\Gm@odd@mp=\dimen124
+\Gm@even@mp=\dimen125
+\Gm@dimlist=\toks21
+
+(d:\texmf\tex\latex\geometry\geometry.cfg))
+(d:\texmf\tex\latex\hyperref\hyperref.sty
+Package: hyperref 2003/07/27 v6.74h Hypertext links for LaTeX
+\@linkdim=\dimen126
+\Hy@linkcounter=\count111
+\Hy@pagecounter=\count112
+
+(d:\texmf\tex\latex\hyperref\pd1enc.def
+File: pd1enc.def 2003/07/27 v6.74h Hyperref: PDFDocEncoding definition (HO)
+)
+(d:\texmf\tex\latex\00miktex\hyperref.cfg
+File: hyperref.cfg 2003/03/08 v1.0 MiKTeX 'hyperref' configuration
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 1829.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 1829.
+Package hyperref Info: Hyper figures OFF on input line 1879.
+Package hyperref Info: Link nesting OFF on input line 1884.
+Package hyperref Info: Hyper index ON on input line 1887.
+Package hyperref Info: Plain pages OFF on input line 1894.
+Package hyperref Info: Backreferencing OFF on input line 1899.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2003.
+(d:\texmf\tex\latex\ltxmisc\url.sty
+\Urlmuskip=\muskip11
+Package: url 1999/03/28  ver 1.5x  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 2142.
+\Fld@menulength=\count113
+\Field@Width=\dimen127
+\Fld@charsize=\dimen128
+\Choice@toks=\toks22
+\Field@toks=\toks23
+Package hyperref Info: Hyper figures OFF on input line 2617.
+Package hyperref Info: Link nesting OFF on input line 2622.
+Package hyperref Info: Hyper index ON on input line 2625.
+Package hyperref Info: backreferencing OFF on input line 2632.
+Package hyperref Info: Link coloring OFF on input line 2637.
+\Hy@abspage=\count114
+\c@Item=\count115
+\c@Hfootnote=\count116
+)
+*hyperref using default driver hpdftex*
+(d:\texmf\tex\latex\hyperref\hpdftex.def
+File: hpdftex.def 2003/07/27 v6.74h Hyperref driver for pdfTeX
+ (d:\texmf\tex\latex\psnfss\pifont.sty
+Package: pifont 2003/03/02 PSNFSS-v9.0c Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(d:\texmf\tex\latex\psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+ (d:\texmf\tex\latex\psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\Fld@listcount=\count117
+\@outlinefile=\write3
+))
+(SamsThesis05.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+ (d:\texmf\tex\context\base\supp-pdf.tex
+(d:\texmf\tex\context\base\supp-mis.tex
+loading : Context Support Macros / Missing
+\protectiondepth=\count118
+\scratchcounter=\count119
+\scratchtoks=\toks24
+\scratchdimen=\dimen129
+\scratchskip=\skip46
+\scratchmuskip=\muskip12
+\scratchbox=\box31
+\scratchread=\read1
+\scratchwrite=\write4
+\zeropoint=\dimen130
+\minusone=\count120
+\thousandpoint=\dimen131
+\emptytoks=\toks25
+\nextbox=\box32
+\nextdepth=\dimen132
+\everyline=\toks26
+\!!counta=\count121
+\!!countb=\count122
+\recursecounter=\count123
+)
+loading : Context Support Macros / PDF
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPtoPDFconversion=\toks27
+)
+-------------------- Geometry parameters
+paper: letterpaper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 108.405pt, 433.62001pt, 72.26999pt
+v-parts: 72.26999pt, 650.43001pt, 72.26999pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  614.295pt
+\paperheight 794.96999pt
+\textwidth  433.62001pt
+\textheight 650.43001pt
+\oddsidemargin  36.13501pt
+\evensidemargin 36.13501pt
+\topmargin  -37.0pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 44.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  28.42482pt plus 8.0pt minus 6.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+Package hyperref Info: Link coloring OFF on input line 53.
+ (d:\texmf\tex\latex\hyperref\nameref.sty
+Package: nameref 2001/01/27 v2.19 Cross-referencing by name of section
+\c@section@level=\count126
+)
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+ (SamsThesis05.out)
+(SamsThesis05.out)
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 56.
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+
+ []
+
+[1
+
+{psfonts.map}] [2
+
+] (SamsThesis05.toc
+LaTeX Font Info:    Try loading font information for U+lasy on input line 6.
+ (d:\texmf\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+[3
+
+])
+\tf@toc=\write5
+ [4] (SamsThesis05.lot)
+\tf@lot=\write6
+ [5
+
+] [6] (SamsThesis05.lof [7
+
+])
+\tf@lof=\write7
+ [8]
+Chapter 1.
+<all.pdf, id=334, 590.205pt x 373.395pt>
+File: all.pdf Graphic file (type pdf)
+ <use all.pdf> [1
+
+ <all.pdf>] [2]
+[3]
+Chapter 2.
+[4
+
+] [5] [6] [7] [8]
+Overfull \hbox (3.9935pt too wide) in paragraph at lines 375--382
+[]/cmr12/In the-ory, the di-ag-nos-tic pro-ce-dures for trans-fer func-tion mod
+-els are rather straight-
+ []
+
+[9] [10] [11]
+Chapter 3.
+[12
+
+]
+Overfull \hbox (40.08784pt too wide) in paragraph at lines 498--509
+[][] 
+ []
+
+[13] [14] [15] <graphics/BroadDelays.png, id=449, 786.94pt x 521.95pt>
+File: graphics/BroadDelays.png Graphic file (type png)
+
+<use graphics/BroadDelays.png>
+<graphics/SaludaDelays.png, id=450, 786.94pt x 521.95pt>
+File: graphics/SaludaDelays.png Graphic file (type png)
+
+<use graphics/SaludaDelays.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16 <graphics/BroadDelays.png>] [17 <graphics/SaludaDelays.png>] [18] [19]
+Chapter 4.
+<graphics/05sep96FlowPRF.png, id=473, 770.88pt x 521.95pt>
+File: graphics/05sep96FlowPRF.png Graphic file (type png)
+
+<use graphics/05sep96FlowPRF.png>
+<prodgraph/05sepinputdiag.png, id=474, 1573.88pt x 1043.9pt>
+File: prodgraph/05sepinputdiag.png Graphic file (type png)
+
+<use prodgraph/05sepinputdiag.png> [20
+
+]
+<graphics/05sep96FlowCCF.png, id=481, 811.03pt x 548.0475pt>
+File: graphics/05sep96FlowCCF.png Graphic file (type png)
+
+<use graphics/05sep96FlowCCF.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <graphics/05sep96FlowPRF.png> <prodgraph/05sepinputdiag.png>]
+<graphics/05sep96FlowFCST.png, id=487, 778.91pt x 521.95pt>
+File: graphics/05sep96FlowFCST.png Graphic file (type png)
+
+<use graphics/05sep96FlowFCST.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <graphics/05sep96FlowCCF.png>]
+<prodgraph/05sepresid.png, id=493, 1565.85pt x 1043.9pt>
+File: prodgraph/05sepresid.png Graphic file (type png)
+
+<use prodgraph/05sepresid.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23 <graphics/05sep96FlowFCST.png> <prodgraph/05sepresid.png>]
+<graphics/05sep96StagePRF.png, id=499, 770.88pt x 521.95pt>
+File: graphics/05sep96StagePRF.png Graphic file (type png)
+
+<use graphics/05sep96StagePRF.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24] <graphics/05sep96StageCCF.png, id=509, 770.88pt x 521.95pt>
+File: graphics/05sep96StageCCF.png Graphic file (type png)
+
+<use graphics/05sep96StageCCF.png> [25 <graphics/05sep96StagePRF.png>]
+<prodgraph/05sepstagediag.png, id=518, 1565.85pt x 1043.9pt>
+File: prodgraph/05sepstagediag.png Graphic file (type png)
+
+<use prodgraph/05sepstagediag.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<graphics/05sep96StageFCST.png, id=519, 770.88pt x 521.95pt>
+File: graphics/05sep96StageFCST.png Graphic file (type png)
+
+<use graphics/05sep96StageFCST.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26 <graphics/05sep96StageCCF.png>] [27 <prodgraph/05sepstagediag.png> <graphic
+s/05sep96StageFCST.png>] [28]
+Overfull \hbox (7.3117pt too wide) in paragraph at lines 937--937
+[]/cmbx12@17.28pt/July 21-23, 1995 - High Man-age-ment on Saluda,
+ []
+
+<graphics/21Jul95FlowPRF.png, id=535, 770.88pt x 521.95pt>
+File: graphics/21Jul95FlowPRF.png Graphic file (type png)
+
+<use graphics/21Jul95FlowPRF.png>
+<prodgraph/23Julinput.png, id=536, 794.97pt x 1072.005pt>
+File: prodgraph/23Julinput.png Graphic file (type png)
+
+<use prodgraph/23Julinput.png> [29
+
+ <graphics/21Jul95FlowPRF.png>]
+<graphics/21Jul95FlowCCF.png, id=542, 770.88pt x 521.95pt>
+File: graphics/21Jul95FlowCCF.png Graphic file (type png)
+
+<use graphics/21Jul95FlowCCF.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30 <prodgraph/23Julinput.png>]
+<graphics/21Jul95FlowFCST.png, id=547, 770.88pt x 521.95pt>
+File: graphics/21Jul95FlowFCST.png Graphic file (type png)
+
+<use graphics/21Jul95FlowFCST.png>
+<prodgraph/23Juldiag.png, id=548, 794.97pt x 1011.78pt>
+File: prodgraph/23Juldiag.png Graphic file (type png)
+
+<use prodgraph/23Juldiag.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31 <graphics/21Jul95FlowCCF.png> <graphics/21Jul95FlowFCST.png>] [32 <prodgrap
+h/23Juldiag.png>] [33]
+<graphics/21Jul95StagePRF.png, id=563, 770.88pt x 521.95pt>
+File: graphics/21Jul95StagePRF.png Graphic file (type png)
+
+<use graphics/21Jul95StagePRF.png>
+<graphics/21Jul95StageCongACF.png, id=564, 794.97pt x 534.99875pt>
+File: graphics/21Jul95StageCongACF.png Graphic file (type png)
+
+<use graphics/21Jul95StageCongACF.png> [34
+
+ <graphics/21Jul95StagePRF.png> <graphics/21Jul95StageCongACF.png>]
+<graphics/21Jul95StageCCF.png, id=569, 770.88pt x 521.95pt>
+File: graphics/21Jul95StageCCF.png Graphic file (type png)
+
+<use graphics/21Jul95StageCCF.png> [35 <graphics/21Jul95StageCCF.png>]
+<graphics/21Jul95StageFCST.png, id=575, 770.88pt x 521.95pt>
+File: graphics/21Jul95StageFCST.png Graphic file (type png)
+
+<use graphics/21Jul95StageFCST.png> [36
+
+ <graphics/21Jul95StageFCST.png>]
+<graphics/21Jul95StagesysACF.png, id=581, 794.97pt x 534.99875pt>
+File: graphics/21Jul95StagesysACF.png Graphic file (type png)
+
+<use graphics/21Jul95StagesysACF.png> [37 <graphics/21Jul95StagesysACF.png>]
+<graphics/28APR99FlowPRF.png, id=586, 786.94pt x 521.95pt>
+File: graphics/28APR99FlowPRF.png Graphic file (type png)
+
+<use graphics/28APR99FlowPRF.png>
+<graphics/28Apr99FlowsysACF.png, id=587, 794.97pt x 534.99875pt>
+File: graphics/28Apr99FlowsysACF.png Graphic file (type png)
+
+<use graphics/28Apr99FlowsysACF.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<graphics/28APR99FlowCCF.png, id=588, 786.94pt x 521.95pt>
+File: graphics/28APR99FlowCCF.png Graphic file (type png)
+
+<use graphics/28APR99FlowCCF.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38
+
+ <graphics/28APR99FlowPRF.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (18.29965pt too wide) in paragraph at lines 1199--1199
+[] 
+ []
+
+[39 <graphics/28Apr99FlowsysACF.png> <graphics/28APR99FlowCCF.png>]
+<graphics/28APR99FlowFCST.png, id=597, 782.925pt x 521.95pt>
+File: graphics/28APR99FlowFCST.png Graphic file (type png)
+
+<use graphics/28APR99FlowFCST.png>
+<graphics/28Apr99FlowResACF.png, id=598, 794.97pt x 534.99875pt>
+File: graphics/28Apr99FlowResACF.png Graphic file (type png)
+
+<use graphics/28Apr99FlowResACF.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<graphics/28APR99StagePRF.png, id=599, 782.925pt x 521.95pt>
+File: graphics/28APR99StagePRF.png Graphic file (type png)
+
+<use graphics/28APR99StagePRF.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<graphics/28APR99StageColAcf.png, id=600, 794.97pt x 534.99875pt>
+File: graphics/28APR99StageColAcf.png Graphic file (type png)
+
+<use graphics/28APR99StageColAcf.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<graphics/28APR99StageCCF.png, id=601, 782.925pt x 521.95pt>
+File: graphics/28APR99StageCCF.png Graphic file (type png)
+
+<use graphics/28APR99StageCCF.png> [40 <graphics/28APR99FlowFCST.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[41 <graphics/28Apr99FlowResACF.png> <graphics/28APR99StagePRF.png>]
+<graphics/28APR99StageFCST.png, id=612, 782.925pt x 521.95pt>
+File: graphics/28APR99StageFCST.png Graphic file (type png)
+
+<use graphics/28APR99StageFCST.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<graphics/28APR99StageRESACF.png, id=613, 794.97pt x 534.99875pt>
+File: graphics/28APR99StageRESACF.png Graphic file (type png)
+
+<use graphics/28APR99StageRESACF.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[42 <graphics/28APR99StageColAcf.png> <graphics/28APR99StageCCF.png>] [43 <grap
+hics/28APR99StageFCST.png> <graphics/28APR99StageRESACF.png>]
+<graphics/21JulStageSpectra.png, id=623, 778.91pt x 521.95pt>
+File: graphics/21JulStageSpectra.png Graphic file (type png)
+
+<use graphics/21JulStageSpectra.png>
+<graphics/05SepSalflow_Spec1.png, id=624, 778.91pt x 521.95pt>
+File: graphics/05SepSalflow_Spec1.png Graphic file (type png)
+
+<use graphics/05SepSalflow_Spec1.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[44
+
+ <graphics/21JulStageSpectra.png>]
+<graphics/05SepSalflow_Spec2.png, id=633, 778.91pt x 521.95pt>
+File: graphics/05SepSalflow_Spec2.png Graphic file (type png)
+
+<use graphics/05SepSalflow_Spec2.png> [45 <graphics/05SepSalflow_Spec1.png> <gr
+aphics/05SepSalflow_Spec2.png>] [46
+
+]
+Chapter 5.
+(SamsThesis05.bbl [47
+
+]) [48
+
+]
+Appendix A.
+[49
+
+] [50] [51] [52] [53] [54]
+Appendix B.
+<graphics/FlowForecast.png, id=684, 751.80875pt x 543.02875pt>
+File: graphics/FlowForecast.png Graphic file (type png)
+
+<use graphics/FlowForecast.png> [55
+
+ <graphics/FlowForecast.png>]
+(SamsThesis05.aux) ) 
+Here is how much of TeX's memory you used:
+ 4309 strings out of 95637
+ 56237 string characters out of 1191260
+ 150011 words of memory out of 1112740
+ 6846 multiletter control sequences out of 35000
+ 11770 words of font info for 46 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 607
+ 34i,15n,36p,259b,403s stack positions out of 1500i,500n,5000p,200000b,32768s
+ 688 PDF objects out of 65536
+ 187 named destinations out of 20000
+ 469 words of extra memory for PDF output out of 65536
+<cmtt8.pfb><cmr10.pfb><cmr7.pfb><cmti12.pfb><cmsy8.pfb><cmm
+i8.pfb><cmsy10.pfb><cmr8.pfb><cmmi12.pfb><cmbx12.pfb><cmr12.pfb><cmcsc10.pfb>
+Output written on SamsThesis05.pdf (63 pages, 977734 bytes).

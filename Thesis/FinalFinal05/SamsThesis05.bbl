@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{aandw}
+Astatkie, T. and W. E. Watt
+\newblock Multiple Input Transfer Function Modeling of Daily Streamflow Series Using Nonlinear Inputs
+\newblock In {\em Water Resources Research}, 1998.
+
+\bibitem{box}
+George E. P. Box, Gwilym M. Jenkins and Gregory C. Reinsel.
+\newblock \em{Time Series Analysis: Forecasting and Control - 3rd Edition}, 1994.
+
+\bibitem{dickey}
+John C. Brocklebank and David A. Dickey
+\newblock {\em SAS for Forecasting Time Series}, 2003.
+
+
+\end{thebibliography}

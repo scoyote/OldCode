@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+
+\bibitem{axtell00a}
+Robert~L. Axtell.
+\newblock Effect of interaction topology and activation regime in several
+  multi-agent systems.
+\newblock In {\em Proceedings of the International Conference on Multi-Agent
+  Systems}, 2000.
+
+\bibitem{levitan99a}
+Bennett Levitan, Jose Lobo, Stuart Kauffman, and Richard Schuler.
+\newblock Optimal organization size in a stochastic environment with
+  externalities.
+\newblock Technical report, Santa Fe Institute, 1999.
+
+\bibitem{parkes00a}
+David~C Parkes and Bernardo~A Huberman.
+\newblock Multiagent cooperative search for portfolio selection.
+\newblock {\em Games and Economic Behavior}, 2000.
+
+\bibitem{vidalclri}
+Jos\'{e}~M. Vidal and Edmund~H. Durfee.
+\newblock Predicting the expected behavior of agents that learn about agents:
+  the {CLRI} framework.
+\newblock {\em Autonomous Agents and Multi-Agent Systems}, 6(1):77--107,
+  January 2003.
+
+\bibitem{weiss99a}
+Gerhard Weiss, editor.
+\newblock {\em Multiagent Systems: A Modern Approach to Distributed Artificial
+  Intelligence}.
+\newblock {MIT} Press, 1999.
+
+\end{thebibliography}

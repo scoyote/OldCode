@@ -1,0 +1,4663 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software, see www.sas.com" sasversion="9.1">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: "." }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.ContentTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.Output
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #F0F0F0;
+  border-width: 1px;
+  border-color: #000000;
+}
+.HeaderEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.NoteContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Graph
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 1px;
+  border-color: #000000;
+}
+.WarnContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.NoteBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.FatalContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Document
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+a:link {
+color:#0066AA
+}
+a:visited {
+color:#004488
+}
+a:active {
+color:#004488
+}
+.BeforeCaption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+}
+.ContentsDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.Pages
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.TitlesAndFooters
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.IndexProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.ProcTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.IndexAction
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: NONE;
+}
+.Data
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Table
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #F0F0F0;
+  border-width: 1px;
+  border-color: #000000;
+}
+.FooterEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.SysTitleAndFooterContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 0;
+  width: 100%;
+}
+.RowFooterEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ContentFolder
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: NONE;
+}
+.RowFooterEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.Index
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ExtendedPage
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 1pt;
+  text-align: center;
+}
+.Container
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Date
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.Caption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+}
+.WarnBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Frame
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.HeaderStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.IndexTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.NoteContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Note
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Byline
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FatalBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ProcTitleFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ByContentFolder
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: NONE;
+}
+.PagesProcLabel
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.RowHeaderFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.WarnContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Cell
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Header
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PageNo
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  text-align: right;
+  vertical-align: top;
+}
+.ContentProcLabel
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.HeaderFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PagesTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.RowHeaderEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PagesProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.Batch
+{
+  font-family: SAS Monospace, Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+  border-width: 1px;
+  border-color: #000000;
+}
+.ContentItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  list-style-type: NONE;
+}
+.Body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.PagesDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.HeaderEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ErrorContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.HeaderStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.DataEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.TitleAndNoteContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 0;
+  width: 100%;
+}
+.RowFooter
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.IndexItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: NONE;
+}
+.BylineContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 0;
+  width: 100%;
+}
+.FatalContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.BodyDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  width: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+.Contents
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.RowFooterStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.UserText
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.HeadersAndFooters
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowHeaderEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ErrorBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ContentProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.RowHeaderStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PagesItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  list-style-type: NONE;
+}
+.RowHeader
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.AfterCaption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+}
+.RowHeaderStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowHeaderEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.DataStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Footer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FolderAction
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: NONE;
+}
+.HeaderEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.SystemTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ErrorContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.SystemFooter
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.FooterEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+<noscript></noscript>
+</head>
+<body onload="startup()" onunload="shutdown()" class="Body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+
+//-->
+</script>
+
+<noscript></noscript>
+<div class="branch">
+<a name="IDX"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">ARIMA Model Identification, Estimation, and Forecast</td>
+</tr>
+<tr>
+<td class="c SystemTitle">Thursday, 5 September 1996 - Tuesday, 10 September 1996</td>
+</tr>
+</table><br>
+<div class="c ProcTitle">The ARIMA Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Descriptive Statistics">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="2" scope="colgroup">Name of Variable = logcong9500_flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Mean of Working Series</th>
+<td class="r Data">9.430879</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Standard Deviation</th>
+<td class="r Data">0.329509</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Number of Observations</th>
+<td class="r Data">121</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX1"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Autocorrelations">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="5" scope="colgroup">Autocorrelations</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">Lag</th>
+<th class="r b Header" scope="col">Covariance</th>
+<th class="r b Header" scope="col">Correlation</th>
+<th class="l b HeaderFixed" scope="col">-1&nbsp;9&nbsp;8&nbsp;7&nbsp;6&nbsp;5&nbsp;4&nbsp;3&nbsp;2&nbsp;1&nbsp;0&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;1</th>
+<th class="r b Header" scope="col">Std Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">0</th>
+<td class="r Data">0.108576</td>
+<td class="r Data">1.00000</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|********************|</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">1</th>
+<td class="r Data">0.099575</td>
+<td class="r Data">0.91710</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|******************&nbsp;&nbsp;|</td>
+<td class="r Data">0.090909</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">2</th>
+<td class="r Data">0.081480</td>
+<td class="r Data">0.75044</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|***************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.148884</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">3</th>
+<td class="r Data">0.060528</td>
+<td class="r Data">0.55747</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|***********&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.177412</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">4</th>
+<td class="r Data">0.039608</td>
+<td class="r Data">0.36479</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|*******.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.191342</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data">0.019807</td>
+<td class="r Data">0.18243</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|****&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.197006</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data">0.0011184</td>
+<td class="r Data">0.01030</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.198397</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">7</th>
+<td class="r Data" nowrap>-0.016464</td>
+<td class="r Data">-.15164</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;***|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.198401</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">8</th>
+<td class="r Data" nowrap>-0.031636</td>
+<td class="r Data">-.29137</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;******|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.199357</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">9</th>
+<td class="r Data" nowrap>-0.042318</td>
+<td class="r Data">-.38976</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;********|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.202846</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">10</th>
+<td class="r Data" nowrap>-0.049200</td>
+<td class="r Data">-.45313</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*********|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.208943</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data" nowrap>-0.053435</td>
+<td class="r Data">-.49214</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**********|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.216913</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data" nowrap>-0.055021</td>
+<td class="r Data">-.50675</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**********|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.225953</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">13</th>
+<td class="r Data" nowrap>-0.053853</td>
+<td class="r Data">-.49600</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**********|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.235158</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">14</th>
+<td class="r Data" nowrap>-0.050969</td>
+<td class="r Data">-.46943</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.*********|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.243650</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">15</th>
+<td class="r Data" nowrap>-0.045920</td>
+<td class="r Data">-.42293</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;********|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.251013</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">16</th>
+<td class="r Data" nowrap>-0.037384</td>
+<td class="r Data">-.34431</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*******|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.256835</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data" nowrap>-0.025299</td>
+<td class="r Data">-.23301</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;*****|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.260622</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data" nowrap>-0.010528</td>
+<td class="r Data">-.09696</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.262338</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">19</th>
+<td class="r Data">0.0057129</td>
+<td class="r Data">0.05262</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.262634</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">20</th>
+<td class="r Data">0.022432</td>
+<td class="r Data">0.20661</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.262721</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<p>
+<div class="c ProcTitle">&quot;.&quot; marks two standard errors</div>
+<p>
+</div>
+<br>
+<a name="IDX2"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Inverse Autocorrelations">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="3" scope="colgroup">Inverse Autocorrelations</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">Lag</th>
+<th class="r b Header" scope="col">Correlation</th>
+<th class="l b HeaderFixed" scope="col">-1&nbsp;9&nbsp;8&nbsp;7&nbsp;6&nbsp;5&nbsp;4&nbsp;3&nbsp;2&nbsp;1&nbsp;0&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">1</th>
+<td class="r Data" nowrap>-0.65458</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">2</th>
+<td class="r Data">0.16042</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">3</th>
+<td class="r Data" nowrap>-0.02457</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">4</th>
+<td class="r Data">0.05574</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data" nowrap>-0.01681</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data" nowrap>-0.02935</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">7</th>
+<td class="r Data" nowrap>-0.04879</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">8</th>
+<td class="r Data">0.12726</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">9</th>
+<td class="r Data" nowrap>-0.05160</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">10</th>
+<td class="r Data" nowrap>-0.04000</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data">0.00543</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data">0.08067</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">13</th>
+<td class="r Data" nowrap>-0.06854</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">14</th>
+<td class="r Data" nowrap>-0.02095</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">15</th>
+<td class="r Data">0.03915</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">16</th>
+<td class="r Data" nowrap>-0.00003</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data">0.02312</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data" nowrap>-0.08252</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">19</th>
+<td class="r Data">0.09594</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">20</th>
+<td class="r Data" nowrap>-0.04438</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX3"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Partial Autocorrelations">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="3" scope="colgroup">Partial Autocorrelations</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">Lag</th>
+<th class="r b Header" scope="col">Correlation</th>
+<th class="l b HeaderFixed" scope="col">-1&nbsp;9&nbsp;8&nbsp;7&nbsp;6&nbsp;5&nbsp;4&nbsp;3&nbsp;2&nbsp;1&nbsp;0&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">1</th>
+<td class="r Data">0.91710</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|******************&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">2</th>
+<td class="r Data" nowrap>-0.57029</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***********|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">3</th>
+<td class="r Data" nowrap>-0.00218</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">4</th>
+<td class="r Data" nowrap>-0.09073</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data" nowrap>-0.10016</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data" nowrap>-0.13997</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.***|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">7</th>
+<td class="r Data" nowrap>-0.13378</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.***|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">8</th>
+<td class="r Data" nowrap>-0.04229</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">9</th>
+<td class="r Data">0.03214</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">10</th>
+<td class="r Data" nowrap>-0.13706</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.***|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data" nowrap>-0.10232</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data" nowrap>-0.02976</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">13</th>
+<td class="r Data" nowrap>-0.04210</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">14</th>
+<td class="r Data" nowrap>-0.13663</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.***|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">15</th>
+<td class="r Data">0.00300</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">16</th>
+<td class="r Data">0.10225</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data">0.08004</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data">0.05962</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">19</th>
+<td class="r Data">0.07751</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">20</th>
+<td class="r Data">0.14404</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX4"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Autocorrelation Check for White Noise">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="10" scope="colgroup">Autocorrelation Check for White Noise</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">To Lag</th>
+<th class="r b Header" scope="col">Chi-Square</th>
+<th class="r b Header" scope="col">DF</th>
+<th class="r b Header" scope="col">Pr &gt; ChiSq</th>
+<th class=" b Header" colspan="6" scope="colgroup">Autocorrelations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data">235.15</td>
+<td class="r Data">6</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.917</td>
+<td class="r Data">0.750</td>
+<td class="r Data">0.557</td>
+<td class="r Data">0.365</td>
+<td class="r Data">0.182</td>
+<td class="r Data">0.010</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data">364.89</td>
+<td class="r Data">12</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data" nowrap>-0.152</td>
+<td class="r Data" nowrap>-0.291</td>
+<td class="r Data" nowrap>-0.390</td>
+<td class="r Data" nowrap>-0.453</td>
+<td class="r Data" nowrap>-0.492</td>
+<td class="r Data" nowrap>-0.507</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data">480.49</td>
+<td class="r Data">18</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data" nowrap>-0.496</td>
+<td class="r Data" nowrap>-0.469</td>
+<td class="r Data" nowrap>-0.423</td>
+<td class="r Data" nowrap>-0.344</td>
+<td class="r Data" nowrap>-0.233</td>
+<td class="r Data" nowrap>-0.097</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX5"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Input Descriptive Statistics">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="2" scope="colgroup">Correlation of logcong9500_flow and logsal8504_flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Number of Observations</th>
+<td class="r Data">121</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Variance of transformed series logcong9500_flow</th>
+<td class="r Data">0.012911</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Variance of transformed series logsal8504_flow</th>
+<td class="r Data">0.126292</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<p>
+<div class="c ProcTitle">Both series have been prewhitened.</div>
+<p>
+</div>
+<br>
+<a name="IDX6"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Crosscorrelations">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="4" scope="colgroup">Crosscorrelations</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">Lag</th>
+<th class="r b Header" scope="col">Covariance</th>
+<th class="r b Header" scope="col">Correlation</th>
+<th class="l b HeaderFixed" scope="col">-1&nbsp;9&nbsp;8&nbsp;7&nbsp;6&nbsp;5&nbsp;4&nbsp;3&nbsp;2&nbsp;1&nbsp;0&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">-20</th>
+<td class="r Data">0.0090179</td>
+<td class="r Data">0.22332</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-19</th>
+<td class="r Data">0.0055215</td>
+<td class="r Data">0.13674</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-18</th>
+<td class="r Data" nowrap>-0.0006189</td>
+<td class="r Data">-.01533</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-17</th>
+<td class="r Data" nowrap>-0.0008381</td>
+<td class="r Data">-.02075</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-16</th>
+<td class="r Data">0.0022331</td>
+<td class="r Data">0.05530</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-15</th>
+<td class="r Data">0.0026507</td>
+<td class="r Data">0.06564</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-14</th>
+<td class="r Data" nowrap>-0.0035234</td>
+<td class="r Data">-.08725</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-13</th>
+<td class="r Data" nowrap>-0.0003150</td>
+<td class="r Data">-.00780</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-12</th>
+<td class="r Data" nowrap>-0.0005072</td>
+<td class="r Data">-.01256</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-11</th>
+<td class="r Data">0.0031305</td>
+<td class="r Data">0.07753</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-10</th>
+<td class="r Data" nowrap>-0.0002135</td>
+<td class="r Data">-.00529</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-9</th>
+<td class="r Data" nowrap>-0.0027880</td>
+<td class="r Data">-.06904</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-8</th>
+<td class="r Data" nowrap>-0.0035586</td>
+<td class="r Data">-.08813</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-7</th>
+<td class="r Data">0.00037389</td>
+<td class="r Data">0.00926</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-6</th>
+<td class="r Data">0.0014968</td>
+<td class="r Data">0.03707</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-5</th>
+<td class="r Data" nowrap>-0.0006402</td>
+<td class="r Data">-.01585</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-4</th>
+<td class="r Data" nowrap>-0.0024708</td>
+<td class="r Data">-.06119</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-3</th>
+<td class="r Data">0.00072632</td>
+<td class="r Data">0.01799</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-2</th>
+<td class="r Data" nowrap>-0.0037338</td>
+<td class="r Data">-.09247</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-1</th>
+<td class="r Data" nowrap>-0.0008020</td>
+<td class="r Data">-.01986</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">0</th>
+<td class="r Data" nowrap>-0.0035973</td>
+<td class="r Data">-.08909</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">1</th>
+<td class="r Data" nowrap>-0.0027762</td>
+<td class="r Data">-.06875</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">2</th>
+<td class="r Data">0.013375</td>
+<td class="r Data">0.33122</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*******&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">3</th>
+<td class="r Data">0.016266</td>
+<td class="r Data">0.40282</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|********&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">4</th>
+<td class="r Data">0.0056378</td>
+<td class="r Data">0.13962</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data" nowrap>-0.0015221</td>
+<td class="r Data">-.03769</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data" nowrap>-0.0079152</td>
+<td class="r Data">-.19602</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;****|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">7</th>
+<td class="r Data">0.00016961</td>
+<td class="r Data">0.00420</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">8</th>
+<td class="r Data">0.0039439</td>
+<td class="r Data">0.09767</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">9</th>
+<td class="r Data" nowrap>-0.0000963</td>
+<td class="r Data">-.00238</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">10</th>
+<td class="r Data">0.0018126</td>
+<td class="r Data">0.04489</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data" nowrap>-0.0003868</td>
+<td class="r Data">-.00958</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data">0.0018532</td>
+<td class="r Data">0.04589</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">13</th>
+<td class="r Data" nowrap>-0.0007329</td>
+<td class="r Data">-.01815</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">14</th>
+<td class="r Data" nowrap>-0.0032641</td>
+<td class="r Data">-.08083</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">15</th>
+<td class="r Data" nowrap>-0.0028295</td>
+<td class="r Data">-.07007</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">16</th>
+<td class="r Data">0.00080916</td>
+<td class="r Data">0.02004</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data">0.00077355</td>
+<td class="r Data">0.01916</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data" nowrap>-0.0009753</td>
+<td class="r Data">-.02415</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">19</th>
+<td class="r Data" nowrap>-0.0030807</td>
+<td class="r Data">-.07629</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">20</th>
+<td class="r Data" nowrap>-0.0021887</td>
+<td class="r Data">-.05420</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<p>
+<div class="c ProcTitle">&quot;.&quot; marks two standard errors</div>
+<p>
+</div>
+<br>
+<a name="IDX7"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Crosscorrelation Check Between Series">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="10" scope="colgroup">Crosscorrelation Check Between Series</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">To Lag</th>
+<th class="r b Header" scope="col">Chi-Square</th>
+<th class="r b Header" scope="col">DF</th>
+<th class="r b Header" scope="col">Pr &gt; ChiSq</th>
+<th class=" b Header" colspan="6" scope="colgroup">Crosscorrelations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data">36.97</td>
+<td class="r Data">6</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data" nowrap>-0.089</td>
+<td class="r Data" nowrap>-0.069</td>
+<td class="r Data">0.331</td>
+<td class="r Data">0.403</td>
+<td class="r Data">0.140</td>
+<td class="r Data" nowrap>-0.038</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data">43.03</td>
+<td class="r Data">12</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data" nowrap>-0.196</td>
+<td class="r Data">0.004</td>
+<td class="r Data">0.098</td>
+<td class="r Data" nowrap>-0.002</td>
+<td class="r Data">0.045</td>
+<td class="r Data" nowrap>-0.010</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data">44.80</td>
+<td class="r Data">18</td>
+<td class="r Data">0.0004</td>
+<td class="r Data">0.046</td>
+<td class="r Data" nowrap>-0.018</td>
+<td class="r Data" nowrap>-0.081</td>
+<td class="r Data" nowrap>-0.070</td>
+<td class="r Data">0.020</td>
+<td class="r Data">0.019</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<br>
+<p>
+<div class="c ProcTitle">Both variables have been prewhitened by the following filter:</div>
+<p>
+<br>
+<p>
+<div class="c ProcTitle">Prewhitening Filter</div>
+<p>
+<a name="IDX8"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Autoregressive Factors">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" Header" colspan="2" scope="colgroup">Autoregressive Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r Header" scope="col">Factor 1: </th>
+<td class=" Data">1 - 1.83621 B**(1) + 0.89616 B**(2)</td>
+</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX9"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Moving Average Factors">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" Header" colspan="2" scope="colgroup">Moving Average Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r Header" scope="col">Factor 1: </th>
+<td class=" Data">1 - 0.89993 B**(1)</td>
+</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX10"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Input Descriptive Statistics">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="2" scope="colgroup">Correlation of logcong9500_flow and logals1000_flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Number of Observations</th>
+<td class="r Data">121</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Variance of transformed series logcong9500_flow</th>
+<td class="r Data">0.01288</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Variance of transformed series logals1000_flow</th>
+<td class="r Data">0.013454</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<p>
+<div class="c ProcTitle">Both series have been prewhitened.</div>
+<p>
+</div>
+<br>
+<a name="IDX11"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Crosscorrelations">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="4" scope="colgroup">Crosscorrelations</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">Lag</th>
+<th class="r b Header" scope="col">Covariance</th>
+<th class="r b Header" scope="col">Correlation</th>
+<th class="l b HeaderFixed" scope="col">-1&nbsp;9&nbsp;8&nbsp;7&nbsp;6&nbsp;5&nbsp;4&nbsp;3&nbsp;2&nbsp;1&nbsp;0&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">-20</th>
+<td class="r Data" nowrap>-0.0000701</td>
+<td class="r Data">-.00533</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-19</th>
+<td class="r Data">0.00021394</td>
+<td class="r Data">0.01625</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-18</th>
+<td class="r Data" nowrap>-0.0004143</td>
+<td class="r Data">-.03147</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-17</th>
+<td class="r Data">0.00080248</td>
+<td class="r Data">0.06096</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-16</th>
+<td class="r Data" nowrap>-0.0002343</td>
+<td class="r Data">-.01780</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-15</th>
+<td class="r Data">0.00023693</td>
+<td class="r Data">0.01800</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-14</th>
+<td class="r Data">0.00025740</td>
+<td class="r Data">0.01955</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-13</th>
+<td class="r Data" nowrap>-0.0008047</td>
+<td class="r Data">-.06113</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-12</th>
+<td class="r Data" nowrap>-0.0012591</td>
+<td class="r Data">-.09565</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-11</th>
+<td class="r Data" nowrap>-0.0024627</td>
+<td class="r Data">-.18708</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;****|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-10</th>
+<td class="r Data">0.0022953</td>
+<td class="r Data">0.17436</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-9</th>
+<td class="r Data" nowrap>-0.0012475</td>
+<td class="r Data">-.09476</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-8</th>
+<td class="r Data" nowrap>-0.0011460</td>
+<td class="r Data">-.08706</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-7</th>
+<td class="r Data">0.00042373</td>
+<td class="r Data">0.03219</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-6</th>
+<td class="r Data" nowrap>-0.0000503</td>
+<td class="r Data">-.00382</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-5</th>
+<td class="r Data">0.0012156</td>
+<td class="r Data">0.09234</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-4</th>
+<td class="r Data">0.00092123</td>
+<td class="r Data">0.06998</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-3</th>
+<td class="r Data" nowrap>-0.0001311</td>
+<td class="r Data">-.00996</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-2</th>
+<td class="r Data" nowrap>-0.0012051</td>
+<td class="r Data">-.09154</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">-1</th>
+<td class="r Data" nowrap>-0.0026326</td>
+<td class="r Data">-.19999</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;****|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">0</th>
+<td class="r Data">0.0051011</td>
+<td class="r Data">0.38751</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|********&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">1</th>
+<td class="r Data" nowrap>-0.0012045</td>
+<td class="r Data">-.09150</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">2</th>
+<td class="r Data" nowrap>-0.0010417</td>
+<td class="r Data">-.07914</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">3</th>
+<td class="r Data">0.00095166</td>
+<td class="r Data">0.07229</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">4</th>
+<td class="r Data" nowrap>4.88453E-6</td>
+<td class="r Data">0.00037</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data" nowrap>-0.0001386</td>
+<td class="r Data">-.01053</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data">0.0010793</td>
+<td class="r Data">0.08199</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">7</th>
+<td class="r Data">0.00055807</td>
+<td class="r Data">0.04239</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">8</th>
+<td class="r Data" nowrap>-0.0013608</td>
+<td class="r Data">-.10338</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">9</th>
+<td class="r Data">0.0016347</td>
+<td class="r Data">0.12418</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">10</th>
+<td class="r Data">0.0018147</td>
+<td class="r Data">0.13785</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data" nowrap>-0.0035061</td>
+<td class="r Data">-.26635</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data" nowrap>-0.0011137</td>
+<td class="r Data">-.08461</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">13</th>
+<td class="r Data" nowrap>-0.0001853</td>
+<td class="r Data">-.01408</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">14</th>
+<td class="r Data">0.00076769</td>
+<td class="r Data">0.05832</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">15</th>
+<td class="r Data" nowrap>-0.0003674</td>
+<td class="r Data">-.02791</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">16</th>
+<td class="r Data" nowrap>-0.0008561</td>
+<td class="r Data">-.06503</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data" nowrap>-0.0000668</td>
+<td class="r Data">-.00508</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data">0.00032917</td>
+<td class="r Data">0.02501</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">19</th>
+<td class="r Data">0.00085396</td>
+<td class="r Data">0.06487</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">20</th>
+<td class="r Data">0.00006804</td>
+<td class="r Data">0.00517</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<p>
+<div class="c ProcTitle">&quot;.&quot; marks two standard errors</div>
+<p>
+</div>
+<br>
+<a name="IDX12"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Crosscorrelation Check Between Series">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="10" scope="colgroup">Crosscorrelation Check Between Series</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">To Lag</th>
+<th class="r b Header" scope="col">Chi-Square</th>
+<th class="r b Header" scope="col">DF</th>
+<th class="r b Header" scope="col">Pr &gt; ChiSq</th>
+<th class=" b Header" colspan="6" scope="colgroup">Crosscorrelations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data">20.59</td>
+<td class="r Data">6</td>
+<td class="r Data">0.0022</td>
+<td class="r Data">0.388</td>
+<td class="r Data" nowrap>-0.092</td>
+<td class="r Data" nowrap>-0.079</td>
+<td class="r Data">0.072</td>
+<td class="r Data">0.000</td>
+<td class="r Data" nowrap>-0.011</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data">35.66</td>
+<td class="r Data">12</td>
+<td class="r Data">0.0004</td>
+<td class="r Data">0.082</td>
+<td class="r Data">0.042</td>
+<td class="r Data" nowrap>-0.103</td>
+<td class="r Data">0.124</td>
+<td class="r Data">0.138</td>
+<td class="r Data" nowrap>-0.266</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data">37.57</td>
+<td class="r Data">18</td>
+<td class="r Data">0.0044</td>
+<td class="r Data" nowrap>-0.085</td>
+<td class="r Data" nowrap>-0.014</td>
+<td class="r Data">0.058</td>
+<td class="r Data" nowrap>-0.028</td>
+<td class="r Data" nowrap>-0.065</td>
+<td class="r Data" nowrap>-0.005</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<br>
+<p>
+<div class="c ProcTitle">Both variables have been prewhitened by the following filter:</div>
+<p>
+<br>
+<p>
+<div class="c ProcTitle">Prewhitening Filter</div>
+<p>
+<a name="IDX13"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Autoregressive Factors">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" Header" colspan="2" scope="colgroup">Autoregressive Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r Header" scope="col">Factor 1: </th>
+<td class=" Data">1 - 1.71442 B**(1) + 0.80946 B**(2)</td>
+</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX14"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Squared Canonical Correlation Estimates">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="7" scope="colgroup">Squared Canonical Correlation Estimates</th>
+</tr>
+<tr>
+<th class="l b Header" scope="col">Lags</th>
+<th class="r b Header" scope="col">MA 0</th>
+<th class="r b Header" scope="col">MA 1</th>
+<th class="r b Header" scope="col">MA 2</th>
+<th class="r b Header" scope="col">MA 3</th>
+<th class="r b Header" scope="col">MA 4</th>
+<th class="r b Header" scope="col">MA 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">AR 0</th>
+<td class="r Data">0.8606</td>
+<td class="r Data">0.5918</td>
+<td class="r Data">0.3372</td>
+<td class="r Data">0.1520</td>
+<td class="r Data">0.0407</td>
+<td class="r Data">0.0001</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 1</th>
+<td class="r Data">0.4136</td>
+<td class="r Data">0.1410</td>
+<td class="r Data">0.0697</td>
+<td class="r Data">0.0665</td>
+<td class="r Data">0.0958</td>
+<td class="r Data">0.1321</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 2</th>
+<td class="r Data">0.0066</td>
+<td class="r Data">0.0041</td>
+<td class="r Data">0.0156</td>
+<td class="r Data">0.0059</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.0002</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 3</th>
+<td class="r Data">0.0057</td>
+<td class="r Data">0.0107</td>
+<td class="r Data">0.0011</td>
+<td class="r Data">0.0009</td>
+<td class="r Data">0.0002</td>
+<td class="r Data">0.0001</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 4</th>
+<td class="r Data">0.0139</td>
+<td class="r Data">0.0002</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.0002</td>
+<td class="r Data">0.0030</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 5</th>
+<td class="r Data">0.0201</td>
+<td class="r Data">0.0002</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.0008</td>
+<td class="r Data">0.0067</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX15"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: SCAN Chi-Square[1] Probability Values">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="7" scope="colgroup">SCAN Chi-Square[1] Probability Values</th>
+</tr>
+<tr>
+<th class="l b Header" scope="col">Lags</th>
+<th class="r b Header" scope="col">MA 0</th>
+<th class="r b Header" scope="col">MA 1</th>
+<th class="r b Header" scope="col">MA 2</th>
+<th class="r b Header" scope="col">MA 3</th>
+<th class="r b Header" scope="col">MA 4</th>
+<th class="r b Header" scope="col">MA 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">AR 0</th>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.0008</td>
+<td class="r Data">0.0368</td>
+<td class="r Data">0.2849</td>
+<td class="r Data">0.9497</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 1</th>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.0017</td>
+<td class="r Data">0.0453</td>
+<td class="r Data">0.0617</td>
+<td class="r Data">0.0254</td>
+<td class="r Data">0.0047</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 2</th>
+<td class="r Data">0.3742</td>
+<td class="r Data">0.4922</td>
+<td class="r Data">0.1828</td>
+<td class="r Data">0.4450</td>
+<td class="r Data">0.9907</td>
+<td class="r Data">0.8845</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 3</th>
+<td class="r Data">0.4134</td>
+<td class="r Data">0.2983</td>
+<td class="r Data">0.7546</td>
+<td class="r Data">0.7669</td>
+<td class="r Data">0.8859</td>
+<td class="r Data">0.9192</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 4</th>
+<td class="r Data">0.2006</td>
+<td class="r Data">0.8952</td>
+<td class="r Data">0.9375</td>
+<td class="r Data">0.9711</td>
+<td class="r Data">0.8964</td>
+<td class="r Data">0.6286</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 5</th>
+<td class="r Data">0.1250</td>
+<td class="r Data">0.8981</td>
+<td class="r Data">0.9780</td>
+<td class="r Data">0.9665</td>
+<td class="r Data">0.8147</td>
+<td class="r Data">0.4602</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX16"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Extended Sample Autocorrelation Function">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="7" scope="colgroup">Extended Sample Autocorrelation Function</th>
+</tr>
+<tr>
+<th class="l b Header" scope="col">Lags</th>
+<th class="r b Header" scope="col">MA 0</th>
+<th class="r b Header" scope="col">MA 1</th>
+<th class="r b Header" scope="col">MA 2</th>
+<th class="r b Header" scope="col">MA 3</th>
+<th class="r b Header" scope="col">MA 4</th>
+<th class="r b Header" scope="col">MA 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">AR 0</th>
+<td class="r Data">0.9171</td>
+<td class="r Data">0.7504</td>
+<td class="r Data">0.5575</td>
+<td class="r Data">0.3648</td>
+<td class="r Data">0.1824</td>
+<td class="r Data">0.0103</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 1</th>
+<td class="r Data">0.6440</td>
+<td class="r Data">0.3878</td>
+<td class="r Data">0.2778</td>
+<td class="r Data">0.2373</td>
+<td class="r Data">0.1569</td>
+<td class="r Data">0.0112</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 2</th>
+<td class="r Data">0.1261</td>
+<td class="r Data" nowrap>-0.1149</td>
+<td class="r Data" nowrap>-0.1668</td>
+<td class="r Data" nowrap>-0.0785</td>
+<td class="r Data">0.0003</td>
+<td class="r Data">0.0148</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 3</th>
+<td class="r Data">0.4957</td>
+<td class="r Data" nowrap>-0.0753</td>
+<td class="r Data" nowrap>-0.0477</td>
+<td class="r Data" nowrap>-0.0709</td>
+<td class="r Data" nowrap>-0.0197</td>
+<td class="r Data">0.0006</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 4</th>
+<td class="r Data" nowrap>-0.4570</td>
+<td class="r Data">0.0806</td>
+<td class="r Data">0.0216</td>
+<td class="r Data" nowrap>-0.0134</td>
+<td class="r Data">0.0072</td>
+<td class="r Data" nowrap>-0.0109</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 5</th>
+<td class="r Data" nowrap>-0.4997</td>
+<td class="r Data">0.1918</td>
+<td class="r Data">0.0678</td>
+<td class="r Data" nowrap>-0.0000</td>
+<td class="r Data">0.0101</td>
+<td class="r Data" nowrap>-0.1149</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX17"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: ESACF Probability Values">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="7" scope="colgroup">ESACF Probability Values</th>
+</tr>
+<tr>
+<th class="l b Header" scope="col">Lags</th>
+<th class="r b Header" scope="col">MA 0</th>
+<th class="r b Header" scope="col">MA 1</th>
+<th class="r b Header" scope="col">MA 2</th>
+<th class="r b Header" scope="col">MA 3</th>
+<th class="r b Header" scope="col">MA 4</th>
+<th class="r b Header" scope="col">MA 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">AR 0</th>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.0017</td>
+<td class="r Data">0.0566</td>
+<td class="r Data">0.3544</td>
+<td class="r Data">0.9586</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 1</th>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.0025</td>
+<td class="r Data">0.0621</td>
+<td class="r Data">0.1690</td>
+<td class="r Data">0.4257</td>
+<td class="r Data">0.9548</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 2</th>
+<td class="r Data">0.1688</td>
+<td class="r Data">0.2105</td>
+<td class="r Data">0.0856</td>
+<td class="r Data">0.4245</td>
+<td class="r Data">0.9973</td>
+<td class="r Data">0.8811</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 3</th>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.4425</td>
+<td class="r Data">0.6380</td>
+<td class="r Data">0.4700</td>
+<td class="r Data">0.8529</td>
+<td class="r Data">0.9948</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 4</th>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.5006</td>
+<td class="r Data">0.8655</td>
+<td class="r Data">0.9054</td>
+<td class="r Data">0.9436</td>
+<td class="r Data">0.9130</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR 5</th>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0.1383</td>
+<td class="r Data">0.5256</td>
+<td class="r Data">0.9999</td>
+<td class="r Data">0.9266</td>
+<td class="r Data">0.2851</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX18"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: ARMA(p+d,q) Tentative Order Selection Tests">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="4" scope="colgroup">ARMA(p+d,q) Tentative<br>Order Selection<br>Tests</th>
+</tr>
+<tr>
+<th class=" b Header" colspan="2" scope="colgroup">SCAN</th>
+<th class=" b Header" colspan="2" scope="colgroup">ESACF</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">p+d</th>
+<th class="r b Header" scope="col">q</th>
+<th class="r b Header" scope="col">p+d</th>
+<th class="r b Header" scope="col">q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r Data">2</td>
+<td class="r Data">0</td>
+<td class="r Data">2</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">1</td>
+<td class="r Data">2</td>
+</tr>
+<tr>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">4</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">0</td>
+<td class="r Data">3</td>
+</tr>
+<tr>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">5</td>
+<td class="r Data">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<p>
+<div class="c ProcTitle">(5% Significance Level)</div>
+<p>
+</div>
+<br>
+<a name="IDX19"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Maximum Likelihood Estimation">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="8" scope="colgroup">Maximum Likelihood Estimation</th>
+</tr>
+<tr>
+<th class="l b Header" scope="col">Parameter</th>
+<th class="r b Header" scope="col">Estimate</th>
+<th class="r b Header" scope="col">Standard Error</th>
+<th class="r b Header" scope="col">t&nbsp;Value</th>
+<th class="r b Header" scope="col">Approx<br>Pr &gt; |t|</th>
+<th class="r b Header" scope="col">Lag</th>
+<th class="l b Header" scope="col">Variable</th>
+<th class="r b Header" scope="col">Shift</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">MU</th>
+<td class="r Data">11.16017</td>
+<td class="r Data">2.03326</td>
+<td class="r Data">5.49</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">0</td>
+<td class=" Data">logcong9500_flow</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">MA1,1</th>
+<td class="r Data" nowrap>-0.03028</td>
+<td class="r Data">0.25483</td>
+<td class="r Data" nowrap>-0.12</td>
+<td class="r Data">0.9054</td>
+<td class="r Data">1</td>
+<td class=" Data">logcong9500_flow</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR1,1</th>
+<td class="r Data">1.24674</td>
+<td class="r Data">0.24166</td>
+<td class="r Data">5.16</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">1</td>
+<td class=" Data">logcong9500_flow</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AR1,2</th>
+<td class="r Data" nowrap>-0.41427</td>
+<td class="r Data">0.21384</td>
+<td class="r Data" nowrap>-1.94</td>
+<td class="r Data">0.0527</td>
+<td class="r Data">2</td>
+<td class=" Data">logcong9500_flow</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">NUM1</th>
+<td class="r Data">0.05482</td>
+<td class="r Data">0.02441</td>
+<td class="r Data">2.25</td>
+<td class="r Data">0.0247</td>
+<td class="r Data">0</td>
+<td class=" Data">logsal8504_flow</td>
+<td class="r Data">3</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">NUM1,1</th>
+<td class="r Data">0.02232</td>
+<td class="r Data">0.03992</td>
+<td class="r Data">0.56</td>
+<td class="r Data">0.5760</td>
+<td class="r Data">1</td>
+<td class=" Data">logsal8504_flow</td>
+<td class="r Data">3</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">DEN1,1</th>
+<td class="r Data">0.72579</td>
+<td class="r Data">0.40712</td>
+<td class="r Data">1.78</td>
+<td class="r Data">0.0746</td>
+<td class="r Data">1</td>
+<td class=" Data">logsal8504_flow</td>
+<td class="r Data">3</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">NUM2</th>
+<td class="r Data">0.27512</td>
+<td class="r Data">0.08603</td>
+<td class="r Data">3.20</td>
+<td class="r Data">0.0014</td>
+<td class="r Data">0</td>
+<td class=" Data">logals1000_flow</td>
+<td class="r Data">10</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">NUM1,1</th>
+<td class="r Data">0.50662</td>
+<td class="r Data">0.09162</td>
+<td class="r Data">5.53</td>
+<td class="r Data">&lt;.0001</td>
+<td class="r Data">1</td>
+<td class=" Data">logals1000_flow</td>
+<td class="r Data">10</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">DEN1,1</th>
+<td class="r Data">0.26648</td>
+<td class="r Data">0.19272</td>
+<td class="r Data">1.38</td>
+<td class="r Data">0.1667</td>
+<td class="r Data">1</td>
+<td class=" Data">logals1000_flow</td>
+<td class="r Data">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX20"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Fit Statistics">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Constant Estimate</th>
+<td class="r Data">1.869687</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Variance Estimate</th>
+<td class="r Data">0.005445</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Std Error Estimate</th>
+<td class="r Data">0.073788</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">AIC</th>
+<td class="r Data" nowrap>-249.807</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">SBC</th>
+<td class="r Data" nowrap>-222.802</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Number of Residuals</th>
+<td class="r Data">110</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX21"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Correlations of Parameter Estimates">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="11" scope="colgroup">Correlations of Parameter Estimates</th>
+</tr>
+<tr>
+<th class="l b Header" scope="col">Variable<br>Parameter</th>
+<th class="r b Header" scope="col">logcong9500_flow<br>MU</th>
+<th class="r b Header" scope="col">logcong9500_flow<br>MA1,1</th>
+<th class="r b Header" scope="col">logcong9500_flow<br>AR1,1</th>
+<th class="r b Header" scope="col">logcong9500_flow<br>AR1,2</th>
+<th class="r b Header" scope="col">logsal8504_flow<br>NUM1</th>
+<th class="r b Header" scope="col">logsal8504_flow<br>NUM1,1</th>
+<th class="r b Header" scope="col">logsal8504_flow<br>DEN1,1</th>
+<th class="r b Header" scope="col">logals1000_flow<br>NUM2</th>
+<th class="r b Header" scope="col">logals1000_flow<br>NUM1,1</th>
+<th class="r b Header" scope="col">logals1000_flow<br>DEN1,1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">logcong9500_flow       MU</th>
+<td class="r Data">1.000</td>
+<td class="r Data">0.009</td>
+<td class="r Data">0.152</td>
+<td class="r Data" nowrap>-0.006</td>
+<td class="r Data" nowrap>-0.620</td>
+<td class="r Data">0.253</td>
+<td class="r Data">0.030</td>
+<td class="r Data" nowrap>-0.230</td>
+<td class="r Data">0.461</td>
+<td class="r Data">0.733</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">logcong9500_flow    MA1,1</th>
+<td class="r Data">0.009</td>
+<td class="r Data">1.000</td>
+<td class="r Data">0.895</td>
+<td class="r Data" nowrap>-0.881</td>
+<td class="r Data">0.077</td>
+<td class="r Data">0.379</td>
+<td class="r Data">0.319</td>
+<td class="r Data" nowrap>-0.129</td>
+<td class="r Data">0.029</td>
+<td class="r Data" nowrap>-0.102</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">logcong9500_flow    AR1,1</th>
+<td class="r Data">0.152</td>
+<td class="r Data">0.895</td>
+<td class="r Data">1.000</td>
+<td class="r Data" nowrap>-0.968</td>
+<td class="r Data" nowrap>-0.137</td>
+<td class="r Data">0.416</td>
+<td class="r Data">0.400</td>
+<td class="r Data" nowrap>-0.255</td>
+<td class="r Data">0.050</td>
+<td class="r Data" nowrap>-0.032</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">logcong9500_flow    AR1,2</th>
+<td class="r Data" nowrap>-0.006</td>
+<td class="r Data" nowrap>-0.881</td>
+<td class="r Data" nowrap>-0.968</td>
+<td class="r Data">1.000</td>
+<td class="r Data">0.071</td>
+<td class="r Data" nowrap>-0.349</td>
+<td class="r Data" nowrap>-0.379</td>
+<td class="r Data">0.213</td>
+<td class="r Data">0.027</td>
+<td class="r Data">0.126</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">logsal8504_flow      NUM1</th>
+<td class="r Data" nowrap>-0.620</td>
+<td class="r Data">0.077</td>
+<td class="r Data" nowrap>-0.137</td>
+<td class="r Data">0.071</td>
+<td class="r Data">1.000</td>
+<td class="r Data">0.037</td>
+<td class="r Data" nowrap>-0.171</td>
+<td class="r Data">0.129</td>
+<td class="r Data" nowrap>-0.364</td>
+<td class="r Data" nowrap>-0.362</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">logsal8504_flow    NUM1,1</th>
+<td class="r Data">0.253</td>
+<td class="r Data">0.379</td>
+<td class="r Data">0.416</td>
+<td class="r Data" nowrap>-0.349</td>
+<td class="r Data">0.037</td>
+<td class="r Data">1.000</td>
+<td class="r Data">0.845</td>
+<td class="r Data" nowrap>-0.288</td>
+<td class="r Data">0.107</td>
+<td class="r Data">0.228</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">logsal8504_flow    DEN1,1</th>
+<td class="r Data">0.030</td>
+<td class="r Data">0.319</td>
+<td class="r Data">0.400</td>
+<td class="r Data" nowrap>-0.379</td>
+<td class="r Data" nowrap>-0.171</td>
+<td class="r Data">0.845</td>
+<td class="r Data">1.000</td>
+<td class="r Data" nowrap>-0.307</td>
+<td class="r Data">0.064</td>
+<td class="r Data">0.022</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">logals1000_flow      NUM2</th>
+<td class="r Data" nowrap>-0.230</td>
+<td class="r Data" nowrap>-0.129</td>
+<td class="r Data" nowrap>-0.255</td>
+<td class="r Data">0.213</td>
+<td class="r Data">0.129</td>
+<td class="r Data" nowrap>-0.288</td>
+<td class="r Data" nowrap>-0.307</td>
+<td class="r Data">1.000</td>
+<td class="r Data">0.556</td>
+<td class="r Data" nowrap>-0.079</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">logals1000_flow    NUM1,1</th>
+<td class="r Data">0.461</td>
+<td class="r Data">0.029</td>
+<td class="r Data">0.050</td>
+<td class="r Data">0.027</td>
+<td class="r Data" nowrap>-0.364</td>
+<td class="r Data">0.107</td>
+<td class="r Data">0.064</td>
+<td class="r Data">0.556</td>
+<td class="r Data">1.000</td>
+<td class="r Data">0.132</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">logals1000_flow    DEN1,1</th>
+<td class="r Data">0.733</td>
+<td class="r Data" nowrap>-0.102</td>
+<td class="r Data" nowrap>-0.032</td>
+<td class="r Data">0.126</td>
+<td class="r Data" nowrap>-0.362</td>
+<td class="r Data">0.228</td>
+<td class="r Data">0.022</td>
+<td class="r Data" nowrap>-0.079</td>
+<td class="r Data">0.132</td>
+<td class="r Data">1.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX22"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Autocorrelation Check of Residuals">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="10" scope="colgroup">Autocorrelation Check of Residuals</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">To Lag</th>
+<th class="r b Header" scope="col">Chi-Square</th>
+<th class="r b Header" scope="col">DF</th>
+<th class="r b Header" scope="col">Pr &gt; ChiSq</th>
+<th class=" b Header" colspan="6" scope="colgroup">Autocorrelations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data">1.28</td>
+<td class="r Data">3</td>
+<td class="r Data">0.7334</td>
+<td class="r Data" nowrap>-0.001</td>
+<td class="r Data" nowrap>-0.023</td>
+<td class="r Data">0.075</td>
+<td class="r Data" nowrap>-0.064</td>
+<td class="r Data">0.028</td>
+<td class="r Data">0.007</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data">10.69</td>
+<td class="r Data">9</td>
+<td class="r Data">0.2974</td>
+<td class="r Data">0.028</td>
+<td class="r Data" nowrap>-0.006</td>
+<td class="r Data" nowrap>-0.183</td>
+<td class="r Data">0.142</td>
+<td class="r Data">0.073</td>
+<td class="r Data" nowrap>-0.128</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data">13.53</td>
+<td class="r Data">15</td>
+<td class="r Data">0.5618</td>
+<td class="r Data">0.098</td>
+<td class="r Data" nowrap>-0.059</td>
+<td class="r Data" nowrap>-0.085</td>
+<td class="r Data">0.013</td>
+<td class="r Data" nowrap>-0.040</td>
+<td class="r Data">0.001</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">24</th>
+<td class="r Data">17.31</td>
+<td class="r Data">21</td>
+<td class="r Data">0.6919</td>
+<td class="r Data" nowrap>-0.093</td>
+<td class="r Data">0.014</td>
+<td class="r Data" nowrap>-0.013</td>
+<td class="r Data" nowrap>-0.078</td>
+<td class="r Data">0.074</td>
+<td class="r Data" nowrap>-0.081</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX23"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Autocorrelation Plot of Residuals">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="5" scope="colgroup">Autocorrelation Plot of Residuals</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">Lag</th>
+<th class="r b Header" scope="col">Covariance</th>
+<th class="r b Header" scope="col">Correlation</th>
+<th class="l b HeaderFixed" scope="col">-1&nbsp;9&nbsp;8&nbsp;7&nbsp;6&nbsp;5&nbsp;4&nbsp;3&nbsp;2&nbsp;1&nbsp;0&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;1</th>
+<th class="r b Header" scope="col">Std Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">0</th>
+<td class="r Data">0.0054447</td>
+<td class="r Data">1.00000</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|********************|</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">1</th>
+<td class="r Data" nowrap>-4.4645E-6</td>
+<td class="r Data">-.00082</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.095346</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">2</th>
+<td class="r Data" nowrap>-0.0001278</td>
+<td class="r Data">-.02347</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.095346</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">3</th>
+<td class="r Data">0.00040840</td>
+<td class="r Data">0.07501</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.095399</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">4</th>
+<td class="r Data" nowrap>-0.0003469</td>
+<td class="r Data">-.06371</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.095933</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data">0.00015401</td>
+<td class="r Data">0.02829</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.096317</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data">0.00003775</td>
+<td class="r Data">0.00693</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.096393</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">7</th>
+<td class="r Data">0.00015433</td>
+<td class="r Data">0.02834</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.096397</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">8</th>
+<td class="r Data" nowrap>-0.0000317</td>
+<td class="r Data">-.00583</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.096473</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">9</th>
+<td class="r Data" nowrap>-0.0009971</td>
+<td class="r Data">-.18313</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;****|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.096476</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">10</th>
+<td class="r Data">0.00077542</td>
+<td class="r Data">0.14242</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.099586</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data">0.00039831</td>
+<td class="r Data">0.07315</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.101421</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data" nowrap>-0.0006961</td>
+<td class="r Data">-.12784</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.***|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.101899</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">13</th>
+<td class="r Data">0.00053413</td>
+<td class="r Data">0.09810</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.103347</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">14</th>
+<td class="r Data" nowrap>-0.0003197</td>
+<td class="r Data">-.05872</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.104190</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">15</th>
+<td class="r Data" nowrap>-0.0004616</td>
+<td class="r Data">-.08478</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.104491</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">16</th>
+<td class="r Data">0.00007305</td>
+<td class="r Data">0.01342</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.105114</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data" nowrap>-0.0002180</td>
+<td class="r Data">-.04005</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.105130</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data" nowrap>6.24496E-6</td>
+<td class="r Data">0.00115</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.105269</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">19</th>
+<td class="r Data" nowrap>-0.0005087</td>
+<td class="r Data">-.09344</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.105269</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">20</th>
+<td class="r Data">0.00007726</td>
+<td class="r Data">0.01419</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+<td class="r Data">0.106020</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<p>
+<div class="c ProcTitle">&quot;.&quot; marks two standard errors</div>
+<p>
+</div>
+<br>
+<a name="IDX24"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Inverse Autocorrelations">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="3" scope="colgroup">Inverse Autocorrelations</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">Lag</th>
+<th class="r b Header" scope="col">Correlation</th>
+<th class="l b HeaderFixed" scope="col">-1&nbsp;9&nbsp;8&nbsp;7&nbsp;6&nbsp;5&nbsp;4&nbsp;3&nbsp;2&nbsp;1&nbsp;0&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">1</th>
+<td class="r Data" nowrap>-0.05592</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">2</th>
+<td class="r Data" nowrap>-0.01824</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">3</th>
+<td class="r Data" nowrap>-0.00987</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">4</th>
+<td class="r Data">0.02842</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data" nowrap>-0.00961</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data" nowrap>-0.01229</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">7</th>
+<td class="r Data" nowrap>-0.02735</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">8</th>
+<td class="r Data">0.01340</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">9</th>
+<td class="r Data">0.15003</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">10</th>
+<td class="r Data" nowrap>-0.10005</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data" nowrap>-0.07616</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data">0.09291</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">13</th>
+<td class="r Data" nowrap>-0.06161</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">14</th>
+<td class="r Data">0.04209</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">15</th>
+<td class="r Data">0.06180</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">16</th>
+<td class="r Data" nowrap>-0.00605</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data">0.03551</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data">0.02370</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">19</th>
+<td class="r Data">0.04468</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">20</th>
+<td class="r Data" nowrap>-0.02496</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX25"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Partial Autocorrelations">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="3" scope="colgroup">Partial Autocorrelations</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">Lag</th>
+<th class="r b Header" scope="col">Correlation</th>
+<th class="l b HeaderFixed" scope="col">-1&nbsp;9&nbsp;8&nbsp;7&nbsp;6&nbsp;5&nbsp;4&nbsp;3&nbsp;2&nbsp;1&nbsp;0&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">1</th>
+<td class="r Data" nowrap>-0.00082</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">2</th>
+<td class="r Data" nowrap>-0.02347</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">3</th>
+<td class="r Data">0.07501</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|**&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">4</th>
+<td class="r Data" nowrap>-0.06467</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data">0.03257</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">6</th>
+<td class="r Data" nowrap>-0.00225</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">7</th>
+<td class="r Data">0.04000</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">8</th>
+<td class="r Data" nowrap>-0.01516</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">9</th>
+<td class="r Data" nowrap>-0.17986</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;****|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">10</th>
+<td class="r Data">0.14512</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|***.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data">0.06922</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">12</th>
+<td class="r Data" nowrap>-0.10832</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;**|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">13</th>
+<td class="r Data">0.06639</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">14</th>
+<td class="r Data" nowrap>-0.05236</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">15</th>
+<td class="r Data" nowrap>-0.06395</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">16</th>
+<td class="r Data" nowrap>-0.00232</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data" nowrap>-0.03827</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">18</th>
+<td class="r Data" nowrap>-0.02907</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">19</th>
+<td class="r Data" nowrap>-0.04649</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;*|&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">20</th>
+<td class="r Data">0.02701</td>
+<td class=" DataFixed">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;|*&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX26"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Crosscorrelation Check of Residuals with Input logsal8504_flow">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="10" scope="colgroup">Crosscorrelation Check of Residuals with Input logsal8504_flow</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">To Lag</th>
+<th class="r b Header" scope="col">Chi-Square</th>
+<th class="r b Header" scope="col">DF</th>
+<th class="r b Header" scope="col">Pr &gt; ChiSq</th>
+<th class=" b Header" colspan="6" scope="colgroup">Crosscorrelations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data">5.14</td>
+<td class="r Data">4</td>
+<td class="r Data">0.2734</td>
+<td class="r Data" nowrap>-0.028</td>
+<td class="r Data" nowrap>-0.048</td>
+<td class="r Data" nowrap>-0.082</td>
+<td class="r Data" nowrap>-0.143</td>
+<td class="r Data">0.133</td>
+<td class="r Data">0.010</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data">9.25</td>
+<td class="r Data">10</td>
+<td class="r Data">0.5088</td>
+<td class="r Data" nowrap>-0.107</td>
+<td class="r Data">0.078</td>
+<td class="r Data" nowrap>-0.101</td>
+<td class="r Data">0.086</td>
+<td class="r Data">0.016</td>
+<td class="r Data" nowrap>-0.055</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data">9.96</td>
+<td class="r Data">16</td>
+<td class="r Data">0.8688</td>
+<td class="r Data" nowrap>-0.033</td>
+<td class="r Data">0.036</td>
+<td class="r Data">0.002</td>
+<td class="r Data">0.013</td>
+<td class="r Data" nowrap>-0.021</td>
+<td class="r Data">0.060</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">23</th>
+<td class="r Data">13.25</td>
+<td class="r Data">22</td>
+<td class="r Data">0.9259</td>
+<td class="r Data">0.002</td>
+<td class="r Data" nowrap>-0.028</td>
+<td class="r Data">0.034</td>
+<td class="r Data" nowrap>-0.038</td>
+<td class="r Data">0.146</td>
+<td class="r Data">0.078</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX27"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Crosscorrelation Check of Residuals with Input logals1000_flow">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="10" scope="colgroup">Crosscorrelation Check of Residuals with Input logals1000_flow</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">To Lag</th>
+<th class="r b Header" scope="col">Chi-Square</th>
+<th class="r b Header" scope="col">DF</th>
+<th class="r b Header" scope="col">Pr &gt; ChiSq</th>
+<th class=" b Header" colspan="6" scope="colgroup">Crosscorrelations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="r Data">3.49</td>
+<td class="r Data">4</td>
+<td class="r Data">0.4787</td>
+<td class="r Data">0.066</td>
+<td class="r Data" nowrap>-0.127</td>
+<td class="r Data">0.082</td>
+<td class="r Data" nowrap>-0.074</td>
+<td class="r Data">0.047</td>
+<td class="r Data">0.004</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">11</th>
+<td class="r Data">9.04</td>
+<td class="r Data">10</td>
+<td class="r Data">0.5284</td>
+<td class="r Data" nowrap>-0.083</td>
+<td class="r Data" nowrap>-0.072</td>
+<td class="r Data" nowrap>-0.040</td>
+<td class="r Data">0.125</td>
+<td class="r Data">0.145</td>
+<td class="r Data" nowrap>-0.070</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">17</th>
+<td class="r Data">9.96</td>
+<td class="r Data">16</td>
+<td class="r Data">0.8687</td>
+<td class="r Data">0.073</td>
+<td class="r Data">0.042</td>
+<td class="r Data" nowrap>-0.027</td>
+<td class="r Data" nowrap>-0.010</td>
+<td class="r Data">0.035</td>
+<td class="r Data" nowrap>-0.003</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">23</th>
+<td class="r Data">13.98</td>
+<td class="r Data">22</td>
+<td class="r Data">0.9024</td>
+<td class="r Data" nowrap>-0.076</td>
+<td class="r Data" nowrap>-0.133</td>
+<td class="r Data" nowrap>-0.123</td>
+<td class="r Data" nowrap>-0.018</td>
+<td class="r Data">0.036</td>
+<td class="r Data" nowrap>-0.007</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX28"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Model for variable logcong9500_flow">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="2" scope="colgroup">Model for variable logcong9500_flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Estimated Intercept</th>
+<td class="r Data">11.16017</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX29"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Autoregressive Factors">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" Header" colspan="2" scope="colgroup">Autoregressive Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r Header" scope="col">Factor 1: </th>
+<td class=" Data">1 - 1.24674 B**(1) + 0.41427 B**(2)</td>
+</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX30"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Moving Average Factors">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" Header" colspan="2" scope="colgroup">Moving Average Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r Header" scope="col">Factor 1: </th>
+<td class=" Data">1 + 0.03028 B**(1)</td>
+</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX31"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Input Number 1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="2" scope="colgroup">Input Number 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Input Variable</th>
+<td class="r Data">logsal8504_flow</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Shift</th>
+<td class="r Data">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX32"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Numerator Factors">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" Header" colspan="2" scope="colgroup">Numerator Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r Header" scope="col">Factor 1: </th>
+<td class=" Data">0.05482 - 0.02232 B**(1)</td>
+</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX33"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Denominator Factors">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" Header" colspan="2" scope="colgroup">Denominator Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r Header" scope="col">Factor 1: </th>
+<td class=" Data">1 - 0.72579 B**(1)</td>
+</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX34"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Input Number 2">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="2" scope="colgroup">Input Number 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Input Variable</th>
+<td class="r Data">logals1000_flow</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Shift</th>
+<td class="r Data">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX35"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Numerator Factors">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" Header" colspan="2" scope="colgroup">Numerator Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r Header" scope="col">Factor 1: </th>
+<td class=" Data">0.27512 - 0.50662 B**(1)</td>
+</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX36"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Denominator Factors">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" Header" colspan="2" scope="colgroup">Denominator Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r Header" scope="col">Factor 1: </th>
+<td class=" Data">1 - 0.26648 B**(1)</td>
+</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX37"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure Arima: Forecasts for variable logcong9500_flow">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class=" b Header" colspan="5" scope="colgroup">Forecasts for variable logcong9500_flow</th>
+</tr>
+<tr>
+<th class="r b Header" scope="col">Obs</th>
+<th class="r b Header" scope="col">Forecast</th>
+<th class="r b Header" scope="col">Std Error</th>
+<th class=" b Header" colspan="2" scope="colgroup">95% Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">122</th>
+<td class="r Data">9.2937</td>
+<td class="r Data">0.0738</td>
+<td class="r Data">9.1491</td>
+<td class="r Data">9.4383</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">123</th>
+<td class="r Data">9.1936</td>
+<td class="r Data">0.1197</td>
+<td class="r Data">8.9590</td>
+<td class="r Data">9.4281</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">124</th>
+<td class="r Data">9.1394</td>
+<td class="r Data">0.1479</td>
+<td class="r Data">8.8495</td>
+<td class="r Data">9.4293</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">125</th>
+<td class="r Data">9.1305</td>
+<td class="r Data">0.1645</td>
+<td class="r Data">8.8080</td>
+<td class="r Data">9.4530</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">126</th>
+<td class="r Data">9.1937</td>
+<td class="r Data">0.1739</td>
+<td class="r Data">8.8530</td>
+<td class="r Data">9.5345</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">127</th>
+<td class="r Data">9.3401</td>
+<td class="r Data">0.1792</td>
+<td class="r Data">8.9888</td>
+<td class="r Data">9.6913</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">128</th>
+<td class="r Data">9.4442</td>
+<td class="r Data">0.1824</td>
+<td class="r Data">9.0868</td>
+<td class="r Data">9.8017</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">129</th>
+<td class="r Data">9.4986</td>
+<td class="r Data">0.1843</td>
+<td class="r Data">9.1373</td>
+<td class="r Data">9.8598</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">130</th>
+<td class="r Data">9.5312</td>
+<td class="r Data">0.1855</td>
+<td class="r Data">9.1677</td>
+<td class="r Data">9.8947</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">131</th>
+<td class="r Data">9.5525</td>
+<td class="r Data">0.1860</td>
+<td class="r Data">9.1879</td>
+<td class="r Data">9.9170</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">132</th>
+<td class="r Data">9.5731</td>
+<td class="r Data">0.1877</td>
+<td class="r Data">9.2051</td>
+<td class="r Data">9.9410</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">133</th>
+<td class="r Data">9.5826</td>
+<td class="r Data">0.1878</td>
+<td class="r Data">9.2146</td>
+<td class="r Data">9.9506</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">134</th>
+<td class="r Data">9.5801</td>
+<td class="r Data">0.1893</td>
+<td class="r Data">9.2091</td>
+<td class="r Data">9.9512</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">135</th>
+<td class="r Data">9.5678</td>
+<td class="r Data">0.1951</td>
+<td class="r Data">9.1854</td>
+<td class="r Data">9.9502</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">136</th>
+<td class="r Data">9.5487</td>
+<td class="r Data">0.2048</td>
+<td class="r Data">9.1474</td>
+<td class="r Data">9.9501</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">137</th>
+<td class="r Data">9.5261</td>
+<td class="r Data">0.2160</td>
+<td class="r Data">9.1028</td>
+<td class="r Data">9.9495</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">138</th>
+<td class="r Data">9.5030</td>
+<td class="r Data">0.2264</td>
+<td class="r Data">9.0592</td>
+<td class="r Data">9.9467</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">139</th>
+<td class="r Data">9.4816</td>
+<td class="r Data">0.2344</td>
+<td class="r Data">9.0221</td>
+<td class="r Data">9.9410</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">140</th>
+<td class="r Data">9.4637</td>
+<td class="r Data">0.2397</td>
+<td class="r Data">8.9939</td>
+<td class="r Data">9.9334</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">141</th>
+<td class="r Data">9.4502</td>
+<td class="r Data">0.2424</td>
+<td class="r Data">8.9751</td>
+<td class="r Data">9.9253</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">142</th>
+<td class="r Data">9.4416</td>
+<td class="r Data">0.2435</td>
+<td class="r Data">8.9644</td>
+<td class="r Data">9.9188</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">143</th>
+<td class="r Data">9.4376</td>
+<td class="r Data">0.2438</td>
+<td class="r Data">8.9599</td>
+<td class="r Data">9.9154</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">144</th>
+<td class="r Data">9.4376</td>
+<td class="r Data">0.2439</td>
+<td class="r Data">8.9595</td>
+<td class="r Data">9.9157</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">145</th>
+<td class="r Data">9.4406</td>
+<td class="r Data">0.2444</td>
+<td class="r Data">8.9616</td>
+<td class="r Data">9.9196</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">146</th>
+<td class="r Data">9.4457</td>
+<td class="r Data">0.2452</td>
+<td class="r Data">8.9651</td>
+<td class="r Data">9.9263</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">147</th>
+<td class="r Data">9.4518</td>
+<td class="r Data">0.2463</td>
+<td class="r Data">8.9691</td>
+<td class="r Data">9.9344</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">148</th>
+<td class="r Data">9.4580</td>
+<td class="r Data">0.2473</td>
+<td class="r Data">8.9732</td>
+<td class="r Data">9.9428</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">149</th>
+<td class="r Data">9.4636</td>
+<td class="r Data">0.2483</td>
+<td class="r Data">8.9770</td>
+<td class="r Data">9.9502</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">150</th>
+<td class="r Data">9.4682</td>
+<td class="r Data">0.2489</td>
+<td class="r Data">8.9802</td>
+<td class="r Data">9.9561</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">151</th>
+<td class="r Data">9.4713</td>
+<td class="r Data">0.2494</td>
+<td class="r Data">8.9826</td>
+<td class="r Data">9.9601</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">152</th>
+<td class="r Data">9.4731</td>
+<td class="r Data">0.2496</td>
+<td class="r Data">8.9838</td>
+<td class="r Data">9.9623</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">153</th>
+<td class="r Data">9.4735</td>
+<td class="r Data">0.2498</td>
+<td class="r Data">8.9840</td>
+<td class="r Data">9.9631</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">154</th>
+<td class="r Data">9.4729</td>
+<td class="r Data">0.2499</td>
+<td class="r Data">8.9832</td>
+<td class="r Data">9.9627</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">155</th>
+<td class="r Data">9.4715</td>
+<td class="r Data">0.2500</td>
+<td class="r Data">8.9816</td>
+<td class="r Data">9.9615</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">156</th>
+<td class="r Data">9.4697</td>
+<td class="r Data">0.2501</td>
+<td class="r Data">8.9795</td>
+<td class="r Data">9.9599</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">157</th>
+<td class="r Data">9.4678</td>
+<td class="r Data">0.2502</td>
+<td class="r Data">8.9774</td>
+<td class="r Data">9.9583</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">158</th>
+<td class="r Data">9.4661</td>
+<td class="r Data">0.2504</td>
+<td class="r Data">8.9754</td>
+<td class="r Data">9.9569</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">159</th>
+<td class="r Data">9.4648</td>
+<td class="r Data">0.2505</td>
+<td class="r Data">8.9739</td>
+<td class="r Data">9.9557</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">160</th>
+<td class="r Data">9.4640</td>
+<td class="r Data">0.2505</td>
+<td class="r Data">8.9729</td>
+<td class="r Data">9.9551</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">161</th>
+<td class="r Data">9.4637</td>
+<td class="r Data">0.2506</td>
+<td class="r Data">8.9725</td>
+<td class="r Data">9.9549</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">162</th>
+<td class="r Data">9.4640</td>
+<td class="r Data">0.2506</td>
+<td class="r Data">8.9727</td>
+<td class="r Data">9.9552</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">163</th>
+<td class="r Data">9.4646</td>
+<td class="r Data">0.2507</td>
+<td class="r Data">8.9733</td>
+<td class="r Data">9.9559</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">164</th>
+<td class="r Data">9.4656</td>
+<td class="r Data">0.2507</td>
+<td class="r Data">8.9742</td>
+<td class="r Data">9.9570</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">165</th>
+<td class="r Data">9.4668</td>
+<td class="r Data">0.2507</td>
+<td class="r Data">8.9753</td>
+<td class="r Data">9.9582</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">166</th>
+<td class="r Data">9.4679</td>
+<td class="r Data">0.2508</td>
+<td class="r Data">8.9764</td>
+<td class="r Data">9.9594</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">167</th>
+<td class="r Data">9.4689</td>
+<td class="r Data">0.2508</td>
+<td class="r Data">8.9774</td>
+<td class="r Data">9.9605</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">168</th>
+<td class="r Data">9.4698</td>
+<td class="r Data">0.2508</td>
+<td class="r Data">8.9781</td>
+<td class="r Data">9.9614</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">169</th>
+<td class="r Data">9.4703</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9786</td>
+<td class="r Data">9.9620</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">170</th>
+<td class="r Data">9.4705</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9788</td>
+<td class="r Data">9.9622</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">171</th>
+<td class="r Data">9.4704</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9787</td>
+<td class="r Data">9.9621</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">172</th>
+<td class="r Data">9.4700</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9783</td>
+<td class="r Data">9.9617</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">173</th>
+<td class="r Data">9.4694</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9776</td>
+<td class="r Data">9.9611</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">174</th>
+<td class="r Data">9.4686</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9769</td>
+<td class="r Data">9.9603</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">175</th>
+<td class="r Data">9.4678</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9760</td>
+<td class="r Data">9.9595</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">176</th>
+<td class="r Data">9.4669</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9751</td>
+<td class="r Data">9.9587</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">177</th>
+<td class="r Data">9.4662</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9744</td>
+<td class="r Data">9.9579</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">178</th>
+<td class="r Data">9.4655</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9737</td>
+<td class="r Data">9.9573</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">179</th>
+<td class="r Data">9.4651</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9732</td>
+<td class="r Data">9.9569</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">180</th>
+<td class="r Data">9.4648</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9730</td>
+<td class="r Data">9.9566</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">181</th>
+<td class="r Data">9.4647</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9729</td>
+<td class="r Data">9.9566</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">182</th>
+<td class="r Data">9.4649</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9730</td>
+<td class="r Data">9.9567</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">183</th>
+<td class="r Data">9.4651</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9733</td>
+<td class="r Data">9.9570</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">184</th>
+<td class="r Data">9.4655</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9737</td>
+<td class="r Data">9.9574</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">185</th>
+<td class="r Data">9.4660</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9741</td>
+<td class="r Data">9.9578</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">186</th>
+<td class="r Data">9.4665</td>
+<td class="r Data">0.2509</td>
+<td class="r Data">8.9746</td>
+<td class="r Data">9.9583</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">187</th>
+<td class="r Data">9.4670</td>
+<td class="r Data">0.2510</td>
+<td class="r Data">8.9751</td>
+<td class="r Data">9.9588</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">188</th>
+<td class="r Data">9.4674</td>
+<td class="r Data">0.2510</td>
+<td class="r Data">8.9756</td>
+<td class="r Data">9.9593</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">189</th>
+<td class="r Data">9.4678</td>
+<td class="r Data">0.2510</td>
+<td class="r Data">8.9759</td>
+<td class="r Data">9.9597</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">190</th>
+<td class="r Data">9.4681</td>
+<td class="r Data">0.2510</td>
+<td class="r Data">8.9762</td>
+<td class="r Data">9.9600</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">191</th>
+<td class="r Data">9.4683</td>
+<td class="r Data">0.2510</td>
+<td class="r Data">8.9764</td>
+<td class="r Data">9.9602</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">192</th>
+<td class="r Data">9.4684</td>
+<td class="r Data">0.2510</td>
+<td class="r Data">8.9765</td>
+<td class="r Data">9.9603</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">193</th>
+<td class="r Data">9.4684</td>
+<td class="r Data">0.2510</td>
+<td class="r Data">8.9765</td>
+<td class="r Data">9.9602</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX38"></a>
+<div>
+<div  class="c">
+<table frame="box" border="1px" bordercolor="#000000" cellspacing="1" cellpadding="0" bgcolor="#FFFFFF" summary="Page Layout">
+<tr>
+<td>
+<div align="center">
+<img alt="Plot of CORR * LAG = CROSSVAR" src="gplot1.gif" border="0" class="c">
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX39"></a>
+<div>
+<div  class="c">
+<table frame="box" border="1px" bordercolor="#000000" cellspacing="1" cellpadding="0" bgcolor="#FFFFFF" summary="Page Layout">
+<tr>
+<td>
+<div align="center">
+<img alt="Plot of CORR * LAG = CROSSVAR" src="gplot2.gif" border="0" class="c">
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX40"></a>
+<div>
+<div  class="c">
+<table frame="box" border="1px" bordercolor="#000000" cellspacing="1" cellpadding="0" bgcolor="#FFFFFF" summary="Page Layout">
+<tr>
+<td>
+<div align="center">
+<img alt="Plot of CORR * LAG = CROSSVAR" src="gplot3.gif" border="0" class="c">
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX41"></a>
+<div>
+<div  class="c">
+<table frame="box" border="1px" bordercolor="#000000" cellspacing="1" cellpadding="0" bgcolor="#FFFFFF" summary="Page Layout">
+<tr>
+<td>
+<div align="center">
+<img alt="Plot of CORR * LAG = CROSSVAR" src="gplot4.gif" border="0" class="c">
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+</div>

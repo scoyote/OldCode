@@ -1,0 +1,34 @@
+\BOOKMARK [0][-]{chapter*.1}{Abstract}{}
+\BOOKMARK [0][-]{chapter*.3}{List of Tables}{}
+\BOOKMARK [0][-]{chapter*.4}{List of Figures}{}
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}
+\BOOKMARK [0][-]{chapter.2}{2 ARIMA Transfer Function Modelling}{}
+\BOOKMARK [1][-]{section.2.1}{2.1 The Box-Jenkins ARIMA Model}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Transfer Function Models}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Fitting Transfer Function Models}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Model Diagnostic Procedures}{section.2.1}
+\BOOKMARK [0][-]{chapter.3}{3 Multiple Input Transfer Function Models for River Data}{}
+\BOOKMARK [1][-]{section.3.1}{3.1 The Broad-Saluda-Congaree River System}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 General Analytical Concepts}{section.3.1}
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Dealing With The Data}{section.3.1}
+\BOOKMARK [1][-]{section.3.2}{3.2 Subsystems}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Stage 1: Saluda Broad Congaree System}{section.3.2}
+\BOOKMARK [1][-]{section.3.3}{3.3 Delays}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{3.4 Description of the Data}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Rivers}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Methods of Analysis}{section.3.4}
+\BOOKMARK [0][-]{chapter.4}{4 Data Analysis}{}
+\BOOKMARK [1][-]{section.4.1}{4.1 September 5-10, 1996 - High Management On Both Rivers}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Logged Streamflow Modelling}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Stage Modelling}{section.4.1}
+\BOOKMARK [1][-]{section.4.2}{4.2 July 21-23, 1995 - High Management on Saluda, Constant Flow on the Broad River}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Logged Streamflow Modelling}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Stage Modelling}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{4.3 April 28 - May 5 1999 - High Management Constant Flow on the Saluda River}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Logged Streamflow Modelling}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Stage Modelling}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{4.4 Delay Determination Using Spectral Analysis}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{5 Conclusions}{}
+\BOOKMARK [0][-]{chapter.5}{Bibliography}{}
+\BOOKMARK [0][-]{appendix.A}{A Model Diagnostic Results}{}
+\BOOKMARK [0][-]{appendix.B}{B SAS/AF Modelling Application}{}

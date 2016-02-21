@@ -1,0 +1,16 @@
+This is pdfTeX, Version 3.141592-1.11a (MiKTeX 2.3) (preloaded format=latex 2000.11.28)  1 NOV 2005 21:48
+**samthesis.bbl
+(samthesis.bbl{pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for english, french, german, ngerman, du
+mylang, nohyphenation, loaded.
+
+! LaTeX Error: Environment thebibliography undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{thebibliography}
+                           {1}
+? 
