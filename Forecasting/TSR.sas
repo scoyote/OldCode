@@ -1,0 +1,385 @@
+/**********************************************************************
+*	Program Name	:	$Id: TSR.sas,v 1.2 2008/03/25 15:31:14 scoyote Exp $
+*	REV/REV AUTH	:	$Revision: 1.2 $ 
+*	AUTHOR			: 	$Author: scoyote $
+*	REV DATE		:	$Date: 2008/03/25 15:31:14 $
+*	REVISION LOG	:	
+*						$Log: TSR.sas,v $
+*						Revision 1.2  2008/03/25 15:31:14  scoyote
+*						Update for abstract submission
+*						
+*						Revision 1.1  2008/03/04 14:44:21  scoyote
+*						*** empty log message ***
+*						
+*
+******************* DO NOT EDIT ABOVE THIS LINE ***********************
+*
+*   DESC:     	Builds SAS and R interface via MySQL (or other odbc connection)
+*				for the Windows platform.  Similar instructions for *NIX.
+*   ORIGIN:		SAS to R to SAS - Phillip R. Holland
+*	DEPN:		R Windows Installation 
+*				R Packages RODBC, FORECAST installed
+*				Add the path to R to the Windows environment variable PATH
+***********************************************************************/ 
+
+%let rpath			=C:\Program Files\R\R-2.6.2\bin;
+%let rsourcepath	=C:\R;
+
+/* Set up connection to database */
+/**/
+/*libname SASMYSQL odbc datasrc=SASMYSQL;*/
+/**/
+/*data SASMYSQL.copper;*/
+/*	set SASHELP.copper;*/
+/*run;*/
+data copper;
+	input copper;
+	file 'C:\R\data\copper.dat';
+	put copper;
+datalines;
+421.89
+409.06
+389.08
+390.88
+436.33
+459.05
+452.57
+472.28
+388.60
+390.78
+372.50
+291.25
+371.36
+355.46
+389.58
+333.94
+291.95
+232.65
+260.55
+268.55
+282.44
+306.79
+288.39
+295.43
+312.37
+364.54
+356.15
+314.18
+305.17
+299.41
+280.30
+282.85
+305.78
+323.36
+319.37
+309.07
+333.58
+323.77
+324.90
+312.15
+332.96
+328.80
+319.14
+308.70
+313.06
+330.54
+354.86
+337.82
+337.15
+350.63
+350.63
+334.32
+383.25
+474.58
+456.03
+432.47
+471.13
+438.29
+407.71
+394.12
+395.63
+385.27
+340.52
+427.38
+466.46
+398.52
+363.63
+282.10
+268.22
+283.38
+260.24
+312.27
+461.28
+362.81
+301.83
+320.87
+306.12
+276.96
+267.01
+309.87
+345.83
+294.36
+297.57
+264.89
+238.42
+191.77
+190.04
+195.22
+290.24
+238.42
+272.97
+226.32
+198.68
+188.31
+170.44
+201.51
+205.24
+210.84
+222.04
+330.26
+309.73
+315.33
+215.29
+236.69
+226.32
+272.97
+338.62
+354.85
+235.30
+231.76
+220.07
+213.25
+270.14
+252.51
+212.65
+271.84
+401.72
+365.72
+261.61
+176.13
+143.30
+112.29
+127.51
+135.54
+122.22
+128.29
+124.38
+119.42
+135.72
+168.73
+124.20
+86.66
+66.71
+88.51
+102.07
+101.87
+109.96
+143.32
+113.71
+126.66
+128.81
+128.01
+115.68
+108.98
+107.12
+104.74
+113.39
+149.78
+145.50
+128.48
+140.94
+148.15
+144.98
+170.32
+175.32
+218.80
+241.58
+169.09
+142.87
+167.59
+172.37
+159.09
+160.97
+159.04
+163.57
+176.23
+174.24
+179.24
+187.81
+203.94
+235.42
+201.51
+192.24
+210.32
+246.09
+187.29
+191.98
+173.01
+160.08
+201.70
+192.95
+145.38
+118.40
+120.55
+100.91
+97.73
+94.66
+113.98
+159.97
+165.84
+147.89
+125.99
+120.14
+99.90
+114.30
+99.86
+112.00
+117.60
+;
+run;
+
+/*	put 'channel <- odbcConnect("SASMYSQL")';*/
+/*	put "copper=sqlFetch(channel,'copper')";*/
+/*	put 'close(channel)';*/
+
+data _null_;
+	file "&rsourcepath.\source\tsdiag.r";	
+	fcst=tranwrd("&rsourcepath\output\fcst.png",'\','\\');
+	diag=tranwrd("&rsourcepath\output\plot.png",'\','\\');
+	spect=tranwrd("&rsourcepath\output\spect.png",'\','\\');
+	acf=tranwrd("&rsourcepath\output\acf.png",'\','\\');
+	pacf=tranwrd("&rsourcepath\output\pacf.png",'\','\\');
+	
+/*	put "library(RODBC)";*/
+	put "library(forecast)";
+	put "copper <- read.table('C:\\R\\data\\copper.dat')";
+
+	put 'copper.ts <- ts(copper)';
+	put 'copper.fit <- arima(copper.ts,order=c(0,1,1),seasonal=list(order=c(0,1,1), period=12))';
+	/* arrgh...quoting - simplification likely */
+	/* redirect graphs to a png file */
+	put 'png(filename="' diag '")';
+	put 'tsdiag(copper.fit,6)';
+	put 'dev.off()';
+
+	put 'copper.fcst<-forecast.Arima(copper.fit)';
+
+	put 'png(filename="' fcst '")';
+	put 'plot.forecast(copper.fcst)';
+	put 'dev.off()';
+
+	put 'png(filename="' acf '")';
+	put 'acf(copper.ts)';
+	put 'dev.off()';
+
+	put 'png(filename="' pacf '")';
+	put 'pacf(copper.ts)';
+	put 'dev.off()';
+
+	put 'png(filename="' spect '")';
+	put 'spectrum(copper.ts)';
+	put 'dev.off()';
+run;
+
+
+
+options xwait xsync;
+
+/* three methods: */
+/* 1.  Call R directly - Some errors are not reported to log	 */
+x "'C:\Program Files\R\R-2.6.2\bin\r.exe'  --no-save --no-restore <""&rsourcepath\source\tsdiag.r""> ""&rsourcepath\output\tsdiag.out""";
+
+/* 2.  Execute via the rterm utility - errors not reported to log show in terminal*/
+/*x c:\r\rspawn  <c:\R\source\tsdiag.r> c:\R\output\tsdiag.out;*/
+/* rspawn.bat is only:
+rterm.exe --no-save --no-restore
+exit
+*/
+/* 3.  From data step */
+/*data _null_;*/
+/*call system("rterm --no-save --no-restore <c:\R\source\tsdiag.r> c:\R\output\tsdiag.out");*/
+/*run;*/
+
+/* include the R log in the SAS log */
+
+data _null_;
+	infile "&rsourcepath\output\tsdiag.out";
+	file log;
+	input;
+	put 'R LOG: ' _infile_;
+run;
+
+/* include the image in the sas output. Specify a file if you are not using autogenerated html output  */
+ods html;
+data _null_;
+	file print;
+	put "<IMG SRC='" "&rsourcepath\output\plot.png" "' border='0'>";
+	put "<IMG SRC='" "&rsourcepath\output\acf.png" "' border='0'>";
+	put "<IMG SRC='" "&rsourcepath\output\pacf.png" "' border='0'>";
+	put "<IMG SRC='" "&rsourcepath\output\spect.png" "' border='0'>";
+	put "<IMG SRC='" "&rsourcepath\output\fcst.png" "' border='0'>";
+run;
+ods html close;
+
+%macro checkSeasonalairARIMA(p=,d=,q=,sp=,sd=,sq=,period=);
+	data _null_;
+		file "&rsourcepath.\source\tsdiag.r";	
+		fcst=tranwrd("&rsourcepath\output\fcst.png",'\','\\');
+		diag=tranwrd("&rsourcepath\output\plot.png",'\','\\');
+		spect=tranwrd("&rsourcepath\output\spect.png",'\','\\');
+		acf=tranwrd("&rsourcepath\output\acf.png",'\','\\');
+		pacf=tranwrd("&rsourcepath\output\pacf.png",'\','\\');
+
+		put "library(forecast)";
+		put "library(RODBC)";
+		put 'channel <- odbcConnect("SASMYSQL")';
+		put "air=sqlFetch(channel,'air')";
+		put 'close(channel)';	
+		put 'air.ts <- ts(air[,2])';
+		put 'png(filename="' acf '")';
+		put 'acf(air.ts)';
+		put 'dev.off()';
+		put 'png(filename="' pacf '")';
+		put 'pacf(air.ts)';
+		put 'dev.off()';
+		put 'png(filename="' spect '")';
+		put 'spectrum(air.ts, spans=c(3,5))';
+		put 'dev.off()';
+
+		put "air.fit <- arima(air.ts,order=c(&p.,&d.,&q.),seasonal=list(order=c(&sp.,&sd.,&sq.), period=&period.))";
+		put 'png(filename="' diag '")';
+		put 'tsdiag(air.fit,6)';
+		put 'dev.off()';
+		put 'air.fcst<-forecast.Arima(air.fit)';
+		put 'png(filename="' fcst '")';
+		put 'plot.forecast(air.fcst)';
+		put 'dev.off()';
+	run;
+
+	options xwait xsync;
+
+	x "'C:\Program Files\R\R-2.6.2\bin\r.exe'  --no-save --no-restore <""&rsourcepath\source\tsdiag.r""> ""&rsourcepath\output\tsdiag.out""";
+
+	data _null_;
+		infile "&rsourcepath\output\tsdiag.out";
+		file log;
+		input;
+		put 'R LOG: ' _infile_;
+	run;
+
+	/* include the image in the sas output. Specify a file if you are not using autogenerated html output  */
+	ods html;
+	data _null_;
+		file print;
+		put "<IMG SRC='" "&rsourcepath\output\plot.png" "' border='0'>";
+		put "<IMG SRC='" "&rsourcepath\output\acf.png" "' border='0'>";
+		put "<IMG SRC='" "&rsourcepath\output\pacf.png" "' border='0'>";
+		put "<IMG SRC='" "&rsourcepath\output\spect.png" "' border='0'>";
+		put "<IMG SRC='" "&rsourcepath\output\fcst.png" "' border='0'>";
+	run;
+	ods html close;
+%mend;
+options mprint mlogic symbolgen;
+%checkSeasonalairARIMA(p=0,d=1,q=1,sp=0,sd=1,sq=1,period=12);
+
+
